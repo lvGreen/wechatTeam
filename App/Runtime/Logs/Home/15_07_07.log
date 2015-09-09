@@ -1,0 +1,691 @@
+[ 2015-07-07T09:15:38+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2015-07-07T09:16:21+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 33 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 36 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2015-07-07T09:19:53+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [2] mkdir(): Permission denied /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 34 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 38 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 41 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2015-07-07T09:20:31+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [2] mkdir(): Permission denied /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 35 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 39 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000334s ]
+
+[ 2015-07-07T09:22:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [2] mkdir(): Permission denied /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 35 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 39 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2015-07-07T09:25:04+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [2] mkdir(): Permission denied /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 35 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 39 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2015-07-07T09:27:53+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [2] mkdir(): Permission denied /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 35 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 39 行.
+NOTIC: [2] mkdir(): No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2015-07-07T09:29:00+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-07-07T09:30:21+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-07-07T11:34:36+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008408s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-07-07T11:34:50+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+
+[ 2015-07-07T11:37:02+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+
+[ 2015-07-07T11:41:11+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+
+[ 2015-07-07T11:44:20+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+
+[ 2015-07-07T11:49:55+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2015-07-07T12:15:34+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2015-07-07T12:15:48+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+
+[ 2015-07-07T12:21:18+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 11 行.
+
+[ 2015-07-07T12:21:21+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 11 行.
+
+[ 2015-07-07T12:37:18+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 36 行.
+
+[ 2015-07-07T12:37:32+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 36 行.
+
+[ 2015-07-07T12:39:55+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 37 行.
+
+[ 2015-07-07T12:40:05+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 37 行.
+
+[ 2015-07-07T12:40:31+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+
+[ 2015-07-07T12:40:35+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+
+[ 2015-07-07T12:41:55+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 36 行.
+
+[ 2015-07-07T12:46:21+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 36 行.
+
+[ 2015-07-07T12:49:52+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 36 行.
+
+[ 2015-07-07T12:51:49+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 36 行.
+
+[ 2015-07-07T12:52:02+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 36 行.
+
+[ 2015-07-07T12:53:15+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 46 行.
+NOTIC: [8] Undefined index: bgPhoto /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 47 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001928s ]
+
+[ 2015-07-07T13:16:27+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+
+[ 2015-07-07T13:22:39+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+
+[ 2015-07-07T13:22:44+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+
+[ 2015-07-07T13:23:16+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+
+[ 2015-07-07T13:23:25+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+
+[ 2015-07-07T13:23:54+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+
+[ 2015-07-07T13:24:21+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+
+[ 2015-07-07T13:24:35+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+
+[ 2015-07-07T13:31:02+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+
+[ 2015-07-07T13:31:06+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2015-07-07T13:31:39+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2015-07-07T13:31:44+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-07-07T13:31:50+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=createVcard
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/ball/doubleChromosphere/App/Common/Common/function.php 第 59 行.
+NOTIC: [2] copy(): Filename cannot be empty /Users/badasslittlepig/www/ball/doubleChromosphere/App/Home/Controller/VcardController.class.php 第 48 行.
+NOTIC: [8] Use of undefined constant QRIMG_TMP_FILE_DIR - assumed 'QRIMG_TMP_FILE_DIR' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Api/Controller/DazzleCodeController.class.php 第 36 行.
+
+[ 2015-07-07T13:32:00+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailtest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+
+[ 2015-07-07T13:32:16+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+
+[ 2015-07-07T13:35:18+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+
+[ 2015-07-07T13:35:31+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+
+[ 2015-07-07T13:36:09+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-07-07T13:36:14+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000322s ]
+
+[ 2015-07-07T13:36:27+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+
+[ 2015-07-07T13:39:08+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+ERR: 模板不存在:./App/Home/View/Vcard/mailTest.html
+
+[ 2015-07-07T13:39:47+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2015-07-07T13:40:36+08:00 ] 127.0.0.1 /index.php?m=Home&c=Vcard&a=mailTest
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 1986 行.
+NOTIC: [2] mb_strlen(): Unknown encoding &quot;&quot; /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/phpmailer.class.php 第 2009 行.
+NOTIC: [2] fsockopen(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+NOTIC: [2] fsockopen(): unable to connect to :25 (php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known) /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Vendor/Phpmailer/smtp.class.php 第 178 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+

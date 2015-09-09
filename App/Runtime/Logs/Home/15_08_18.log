@@ -1,0 +1,23 @@
+[ 2015-08-18T13:45:15+08:00 ] 127.0.0.1 /index.php?m=&c=Iqiyi&a=index&var=value&p=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ball_aiqiyi_account` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ball_aiqiyi_account` ORDER BY add_time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000543s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+

@@ -1,0 +1,53 @@
+[ 2015-08-17T08:55:41+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+ERR: SQLSTATE[HY000] [2002] No such file or directory
+
+[ 2015-08-17T11:22:25+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-733-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号  15235627766  密码  weiwei250','20150817112225','http://kaixin58.com/thread-733-1-1.html') [ RunTime:0.0012s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号  15279061338  密码  huahua824908','20150817112225','http://kaixin58.com/thread-733-1-1.html') [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2015-08-17T11:22:43+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index&var=value&aghs%EF%BC%9Daghsghags
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+
+[ 2015-08-17T11:23:26+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index&var=value&aghs%EF%BC%9Daghsghags
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+
+[ 2015-08-17T11:23:57+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index&var=value&aghs%EF%BC%9Daghsghags
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: signature /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/WechatApiController.class.php 第 81 行.
+ERR: Think\Controller:tt方法不存在！
+
+[ 2015-08-17T11:24:50+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index&var=value&aghs%EF%BC%9Daghsghags
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/WechatApiController.class.php 第 86 行.
+

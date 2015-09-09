@@ -1,0 +1,21 @@
+[ 2015-09-05T13:02:15+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0048s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-1250-1-1.html' LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('480599868
+
+
+
+      ','20150905130209','http://kaixin58.com/thread-1250-1-1.html') [ RunTime:0.0013s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1112' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号15918407648密码441095442','20150905130215','http://qukoo.cn/index.php?control=article&id=1112') [ RunTime:0.0012s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号15284020224密码mqqww231','20150905130215','http://qukoo.cn/index.php?control=article&id=1112') [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007004s ]
+

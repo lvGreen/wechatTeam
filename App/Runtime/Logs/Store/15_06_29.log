@@ -1,0 +1,96 @@
+[ 2015-06-29T11:19:28+08:00 ] ::1 /VPS/index.php/Store/Index/createAnalizeTable
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `ball_data_analyse` [ RunTime:0.0011s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('1') [ RunTime:0.0004s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('2') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('3') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('4') [ RunTime:0.0004s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('5') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('6') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('7') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('8') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('9') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('10') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('11') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('12') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('13') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('14') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('15') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('16') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('17') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('18') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('19') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('20') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('21') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('22') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('23') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('24') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('25') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('26') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('27') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('28') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('29') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('30') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('31') [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('32') [ RunTime:0.0001s ]
+SQL: INSERT INTO `ball_data_analyse` (`number`) VALUES ('33') [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2015-06-29T11:19:31+08:00 ] ::1 /VPS/index.php/Store/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+ERR: 非法操作:index
+
+[ 2015-06-29T13:14:03+08:00 ] ::1 /VPS/index.php/Store/Index/grabPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+ERR: SQLSTATE[HY000] [2002] No such file or directory
+
+[ 2015-06-29T13:14:34+08:00 ] ::1 /VPS/index.php/Store/Index/grabPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `ball_prize` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `ball_prize` [ RunTime:0.0009s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2003019' for key 'periods'
+
+[ 2015-06-29T13:15:57+08:00 ] ::1 /VPS/index.php/Store/Index/grabPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `ball_prize` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `ball_prize` [ RunTime:0.0052s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2003019' for key 'periods'
+
+[ 2015-06-29T13:16:42+08:00 ] ::1 /VPS/index.php/Store/Index/grabPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `ball_prize` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `ball_prize` [ RunTime:0.0012s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2003019' for key 'periods'
+

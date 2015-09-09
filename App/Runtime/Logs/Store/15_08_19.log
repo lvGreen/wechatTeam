@@ -1,0 +1,1248 @@
+[ 2015-08-19T16:35:10+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0103s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0020s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号：15806100008','20150819163510','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0019s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号：18602861958','20150819163510','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0004s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号：15097660919','20150819163510','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号：15835888251','20150819163510','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006756s ]
+
+[ 2015-08-19T16:35:29+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+
+[ 2015-08-19T16:35:32+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+
+[ 2015-08-19T16:36:40+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+
+[ 2015-08-19T16:39:31+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2015-08-19T16:41:27+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0022s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号：15806100008','20150819164127','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0012s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号：18602861958','20150819164127','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0005s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号：15097660919','20150819164127','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0004s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号：15835888251','20150819164127','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2015-08-19T16:43:52+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0021s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'name_pass' at row 1
+
+[ 2015-08-19T16:44:25+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'name_pass' at row 1
+
+[ 2015-08-19T16:45:59+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] preg_match_all(): Unknown modifier 't' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/PlanTaskController.class.php 第 55 行.
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'name_pass' at row 1
+
+[ 2015-08-19T16:46:20+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] preg_match_all(): Unknown modifier 't' /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/PlanTaskController.class.php 第 55 行.
+
+[ 2015-08-19T16:46:34+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T16:46:45+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T16:46:55+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T16:50:35+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'name_pass' at row 1
+
+[ 2015-08-19T16:51:09+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0022s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T16:51:22+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'name_pass' at row 1
+
+[ 2015-08-19T16:53:44+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0003s ]
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'name_pass' at row 1
+
+[ 2015-08-19T16:53:53+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('
+
+账号：15806100008
+密码：8819700
+
+
+账号：18602861958
+密码：159800lh
+
+账号：15097660919
+密码：gp199195
+账号：15835888251
+密码：whj000000','20150819165353','http://kaixin58.com/thread-793-1-1.html') [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2015-08-19T16:53:57+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-08-19T16:59:32+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0021s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:00:02+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:00:17+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-793-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:01:20+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('
+
+【VIP会员分享】爱奇艺pps通用vip会员账号  13791533817  密码  4278560
+
+【VIP会员分享】爱奇艺pps通用vip会员账号  158307901@qq.com  密码  68465674
+
+
+','20150819170119','http://kaixin58.com/thread-794-1-1.html') [ RunTime:0.0005s ]
+
+[ 2015-08-19T17:01:20+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:01:30+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:02:05+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:02:07+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0013s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:02:24+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0012s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:02:32+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0023s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:03:28+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:03:43+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-19T17:04:49+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0024s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:05:02+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0015s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:09:19+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号13986222920密码820414','20150819170919','http://qukoo.cn/index.php?control=article&id=1023') [ RunTime:0.0012s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号13917377440密码kenshin','20150819170919','http://qukoo.cn/index.php?control=article&id=1023') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2015-08-19T17:09:22+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0012s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2015-08-19T17:09:29+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2015-08-19T17:17:01+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0013s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2015-08-19T17:18:00+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0023s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号13986222920密码820414','20150819171800','http://qukoo.cn/index.php?control=article&id=1023') [ RunTime:0.0010s ]
+SQL: INSERT INTO `ball_aiqiyi_account` (`name_pass`,`add_time`,`url`) VALUES ('账号13917377440密码kenshin','20150819171800','http://qukoo.cn/index.php?control=article&id=1023') [ RunTime:0.0004s ]
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'name_pass' at row 1
+
+[ 2015-08-19T17:18:31+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2015-08-19T17:18:34+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0019s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2015-08-19T17:19:05+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-08-19T17:19:13+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0012s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://qukoo.cn/index.php?control=article&id=1023' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2015-08-19T17:19:39+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0016s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:20:06+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0017s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:21:29+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:22:32+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=grabAiqiyiAccount&var=value
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `ball_aiqiyi_account` [ RunTime:0.0018s ]
+SQL: SELECT `id` FROM `ball_aiqiyi_account` WHERE `url` = 'http://kaixin58.com/thread-794-1-1.html' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-19T17:38:17+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=WechatApi&var=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+ERR: 非法操作:WechatApi
+
+[ 2015-08-19T17:38:45+08:00 ] 127.0.0.1 /index.php?m=Store&c=PlanTask&a=WechatApi&var=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+ERR: 非法操作:WechatApi
+
+[ 2015-08-19T17:39:00+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0041s ]
+ERR: Think\Model:createNewData方法不存在！
+
+[ 2015-08-19T17:39:59+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0015s ]
+ERR: Think\Model:createNewData方法不存在！
+
+[ 2015-08-19T17:40:23+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0018s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174023') [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/WechatApiController.class.php 第 75 行.
+NOTIC: [2] file_put_contents(./App/Runtime/Data/global.php): failed to open stream: Permission denied /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Library/Think/Storage/Driver/File.class.php 第 47 行.
+ERR: _STORAGE_WRITE_ERROR_:./App/Runtime/Data/global.php
+
+[ 2015-08-19T17:40:49+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0014s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174049') [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/WechatApiController.class.php 第 75 行.
+
+[ 2015-08-19T17:43:22+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174322') [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/WechatApiController.class.php 第 75 行.
+
+[ 2015-08-19T17:44:13+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0015s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174413') [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/WechatApiController.class.php 第 75 行.
+
+[ 2015-08-19T17:44:15+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0015s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174415') [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/WechatApiController.class.php 第 75 行.
+
+[ 2015-08-19T17:44:21+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0019s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174421') [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: HTTP_RAW_POST_DATA /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Controller/WechatApiController.class.php 第 75 行.
+
+[ 2015-08-19T17:44:43+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0016s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174443') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: wechatConfigModel /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Model/WechatConfigModel.class.php 第 11 行.
+
+[ 2015-08-19T17:45:37+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0017s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174537') [ RunTime:0.0008s ]
+
+[ 2015-08-19T17:45:47+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0016s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174547') [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:46:06+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0016s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174606') [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:46:09+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0021s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174609') [ RunTime:0.0004s ]
+
+[ 2015-08-19T17:46:32+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0017s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174632') [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:47:45+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0013s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174745') [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:48:36+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0019s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174836') [ RunTime:0.0004s ]
+
+[ 2015-08-19T17:49:08+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0016s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174908') [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:49:10+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0013s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174910') [ RunTime:0.0004s ]
+
+[ 2015-08-19T17:49:25+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0008s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174925') [ RunTime:0.0003s ]
+
+[ 2015-08-19T17:49:27+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174927') [ RunTime:0.0004s ]
+
+[ 2015-08-19T17:49:47+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174947') [ RunTime:0.0006s ]
+
+[ 2015-08-19T17:49:53+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0017s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819174953') [ RunTime:0.0008s ]
+
+[ 2015-08-19T17:50:41+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175041') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+
+[ 2015-08-19T17:51:06+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0016s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175106') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: wechatConfigModel /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Model/WechatConfigModel.class.php 第 11 行.
+
+[ 2015-08-19T17:51:23+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0017s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175123') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0007s ]
+
+[ 2015-08-19T17:51:35+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0019s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175135') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0010s ]
+
+[ 2015-08-19T17:52:18+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0017s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175218') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819175218','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0007s ]
+ERR: Think\Model:getOneInfo方法不存在！
+
+[ 2015-08-19T17:52:54+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0015s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175254') [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819175254','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: wechatUserModel /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Model/WechatUserModel.class.php 第 11 行.
+
+[ 2015-08-19T17:53:35+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0016s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175335') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819175335','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: wechatUserModel /Users/badasslittlepig/www/ball/doubleChromosphere/App/Store/Model/WechatUserModel.class.php 第 12 行.
+
+[ 2015-08-19T17:54:10+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0011s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175410') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819175410','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ball_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `ball_wechat_user` SET `last_time`='20150819175410',`source`='0' WHERE `id`=1 [ RunTime:0.0005s ]
+ERR: Think\Controller:receive方法不存在！
+
+[ 2015-08-19T17:55:06+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0019s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175506') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819175506','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0005s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ball_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ball_wechat_user` SET `last_time`='20150819175506',`source`='0' WHERE `id`=1 [ RunTime:0.0003s ]
+ERR: Think\Controller:receive方法不存在！
+
+[ 2015-08-19T17:55:18+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0015s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819175518') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819175518','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ball_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `ball_wechat_user` SET `last_time`='20150819175518',`source`='0' WHERE `id`=1 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2015-08-19T18:03:54+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0014s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819180354') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819180354','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ball_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ball_wechat_user` SET `last_time`='20150819180354',`source`='0' WHERE `id`=1 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2015-08-19T18:04:35+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0014s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819180435') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819180435','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ball_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ball_wechat_user` SET `last_time`='20150819180435',`source`='0' WHERE `id`=1 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2015-08-19T18:04:59+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0019s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819180459') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819180459','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `ball_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `ball_wechat_user` SET `last_time`='20150819180459',`source`='0' WHERE `id`=1 [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2015-08-19T18:07:21+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0019s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819180719') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0005s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819180719','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ball_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ball_wechat_user` SET `last_time`='20150819180719',`source`='0' WHERE `id`=1 [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2015-08-19T18:08:19+08:00 ] 127.0.0.1 /index.php?m=Store&c=WechatApi&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [2] include(Store\Model\WechatEventModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatEventModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_event` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ball_wechat_event` (`open_id`,`flag`,`scene_id`,`package`,`create_time`) VALUES ('1234567890','3','normalPush','','20150819180818') [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\WechatConfigModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatConfigModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_config` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ball_wechat_config` WHERE `identity_code` = '7bdaebbced1198f1a3eb4ef79f89f915' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `ball_wechat_event` (`create_time`,`flag`,`open_id`,`scene_id`,`package`) VALUES ('20150819180818','1','ok_Tas7S8rDGbcYce8u97I6g7HK8',NULL,'<xml><ToUserName><![CDATA[gh_1c5c24188085]]></ToUserName>
+<FromUserName><![CDATA[ok_Tas7S8rDGbcYce8u97I6g7HK8]]></FromUserName>
+<CreateTime>1439976943</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>') [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\WechatUserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\WechatUserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/ball/doubleChromosphere/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `ball_wechat_user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `ball_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `ball_wechat_user` SET `subscribe`='1',`last_time`='20150819180818',`source`='0' WHERE `id`=1 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000573s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
