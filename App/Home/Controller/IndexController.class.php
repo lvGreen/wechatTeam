@@ -5,7 +5,9 @@ use Think\Page;
 
 class IndexController extends BaseController {
     public function index(){
-        $listDataModel = M('Prize');
+        $listDataModel = M('wechat');
+        dump($listDataModel->select());
+        exit;
         
         $dataCount = $listDataModel->count();
 

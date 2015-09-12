@@ -19,14 +19,14 @@ class PlanTaskController extends Controller {
      * 股票当前是否低于预期值
      */
     public function grapMarketIndex(){
-        $marketModel = A('Api/Market');
+        $marketModel = A('Api2/Market');
         $marketConfig = C('marketIndex');
         $marketName = $marketConfig['name'];
         
         $realTimeMarketData = $marketModel->grapMarket($marketName);
         if($realTimeMarketData[3] < $marketConfig['target']){
             $sendContent = '小于设置值'.$marketConfig['target'];
-            $mailModel = A('Api/Mail');
+            $mailModel = A('Api2/Mail');
             $result = $mailModel->sendmail('skyshappiness@gmail.com',$realTimeMarketData[0],$sendContent);
         }
     }

@@ -47,7 +47,7 @@ class VcardController extends BaseController {
         $tempfile = C('DOWN_TEMP').$_FILES['bgPhoto']['name'];
         copy($_FILES['bgPhoto']['tmp_name'],$tempfile);
         $outFileName = APP_PATH . 'Upload/VisualCode'.date('Ym').time().'.png';
-        $dazzleCodeModel = A('Api/DazzleCode');
+        $dazzleCodeModel = A('Api2/DazzleCode');
         $dazzleCodeModel->createQrImg($str, $tempfile, $outFileName, 600, 600, 600, 600);
     }
     

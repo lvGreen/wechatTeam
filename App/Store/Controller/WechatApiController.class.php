@@ -281,7 +281,7 @@ class WechatApiController extends Controller {
         $wechatUserModel = D('WechatUser');
         $condition = array('open_id' => $this->openID);
         $wechatUserInfo = $wechatUserModel->getOneMsgInfo($condition);
-        $wechatApi = A('Api/Wechat');
+        $wechatApi = A('Api2/Wechat');
         $user = $wechatApi->useUnionGetUserInfo($this->openID);
         if (!array_key_exists('openid', $user) || empty($user)) {
             return;
