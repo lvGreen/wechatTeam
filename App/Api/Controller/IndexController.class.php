@@ -5,10 +5,11 @@
  * Date: 9/12/15
  * Time: 7:32 PM
  */
-namespace Home\Controller;
+namespace Api\Controller;
 use Think\Controller;
-class IndexController extends Controller {
+
+class IndexController extends BasicController {
     public function index(){
-        echo 'hello,thinkphp!';
+        echo "123";
     }
 }
