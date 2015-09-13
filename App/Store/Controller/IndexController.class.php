@@ -1,78 +1,78 @@
 <?php
+
 namespace Store\Controller;
+
 use Think\Controller;
 
 class IndexController extends Controller {
-    public function grabPage(){
-        $dateAndPeriods = '/<td align="center">(.*)<\/td>/';
-        $redBall = '/<em class="rr">(.*)<\/em>/';
-        $blueBall = '/<em>(.*)<\/em>/';
-        for($i = 91;$i>0;$i--){
-            $result = array();
-            $url = 'http://kaijiang.zhcw.com/zhcw/html/ssq/list_'.$i.'.html';
-            $content = http_curl($url,'','get');
-            preg_match_all($dateAndPeriods, $content, $dateMaches);
-            preg_match_all($redBall, $content, $redBallMaches);
-            preg_match_all($blueBall, $content, $blueBallMaches);
-            
-            $len = count($dateMaches[1]);
-            for($j=2;$j<$len;$j += 3){
-                $result[$j]['date'] = str_replace('-','',$dateMaches[1][($j-2)]);
-                $result[$j]['periods'] = $dateMaches[1][($j-1)];
-                $result[$j]['red_ball_one'] = $redBallMaches[1][($j-2)];
-                $result[$j]['red_ball_two'] = $redBallMaches[1][($j-1)];
-                $result[$j]['red_ball_three'] = $redBallMaches[1][($j)];
-                $result[$j]['red_ball_four'] = $redBallMaches[1][($j+1)];
-                $result[$j]['red_ball_five'] = $redBallMaches[1][($j+2)];
-                $result[$j]['red_ball_six'] = $redBallMaches[1][($j+3)];
-                $result[$j]['blue_ball'] = $blueBallMaches[1][($j/3)];
-                $result[$j]['add_time'] = date('YmdHis');
-            }
-            
-            $modelService = D('User','Model');
-            $modelService->prizeAdd($result);
-        }
+
+    function __construct() {
+        parent::__construct();
+    }
+
+    public function login() {
+        $this->display();
     }
     
-    public function getOneDayData(){
-        $dateAndPeriods = '/<td align="center">(.*)<\/td>/';
-        $redBall = '/<em class="rr">(.*)<\/em>/';
-        $blueBall = '/<em>(.*)<\/em>/';
-        
+    public function createVerify(){
+        $verifyConfig = C('verify');
+        $Verify = new \Think\Verify($verifyConfig);
+        $Verify->entry();
+    } 
+
+    public function userLogin() {
         $result = array();
-        $url = 'http://kaijiang.zhcw.com/zhcw/html/ssq/list.html';
-        $content = http_curl($url,'','get');
-        preg_match_all($dateAndPeriods, $content, $dateMaches);
-        preg_match_all($redBall, $content, $redBallMaches);
-        preg_match_all($blueBall, $content, $blueBallMaches);
-        
-        $j = 2;
-        $result[$j]['date'] = str_replace('-', '', $dateMaches[1][($j-2)]);
-        $result[$j]['periods'] = $dateMaches[1][($j-1)];
-        $result[$j]['red_ball_one'] = $redBallMaches[1][($j-2)];
-        $result[$j]['red_ball_two'] = $redBallMaches[1][($j-1)];
-        $result[$j]['red_ball_three'] = $redBallMaches[1][($j)];
-        $result[$j]['red_ball_four'] = $redBallMaches[1][($j+1)];
-        $result[$j]['red_ball_five'] = $redBallMaches[1][($j+2)];
-        $result[$j]['red_ball_six'] = $redBallMaches[1][($j+3)];
-        $result[$j]['blue_ball'] = $blueBallMaches[1][($j/3)];
-        $result[$j]['add_time'] = date('YmdHis');
-        if (date('Ymd') == $result[$j]['date']){
-            $modelService = D('prize');
-            $modelService->prizeAdd($result);
-        }else{
+        $verify = new \Think\Verify();
+        $resultVerify = $verify->check($_POST['vifcode']);
+        if($resultVerify == FALSE){
+            $result['error'] = '1001';
+            $result['msg'] = '验证码错误';
+            $this->ajaxReturn($result);
             exit;
         }
-    }
-    
-    function createAnalizeTable(){
-        $dataAnalyseModel = M('DataAnalyse');
-        for($i=1;$i<34;$i++){
-            $dataAnalyseModel->add(array('number'=>$i));
+        $userName = trim(I('post.adminname', '0', 'string'));
+        $userModel = D('User');
+        $userInfo = $userModel->getAccountInfo($userName);
+        if (empty($userInfo)) {
+            $this->error('账号或密码错误，请重新输入！');
         }
+        $passArray['pass'] = I('post.password');
+        $passArray['salt'] = $userInfo['salt'];
+        $passArray['default'] = C('commonPassWord');
+        $blogService = D('Check', 'Service');
+        $pass = $blogService->createPass($passArray);
+        if ($pass == $userInfo['password']) {
+            $_SESSION['user'] = $userInfo['user'];
+            $_SESSION['role'] = $userInfo['role'];
+            $result['error'] = '0';
+            $result['url'] = U('Store/Shop/index');
+        } else {
+            $result['error'] = '1002';
+            $result['msg'] = '账号或密码错误，请重新输入！';
+        }
+        $this->ajaxReturn($result);
     }
-    
-    function test(){
-        echo phpinfo();
-    }
+
+//    public function createAccount() {
+//        $passWord = '123456';
+//        $salt = time();
+//        $passArray['pass'] = $passWord;
+//        $passArray['salt'] = $salt;
+//        $passArray['default'] = C('commonPassWord');
+//        ksort($passArray);
+//        $str = '';
+//        foreach ($passArray as $key => $val) {
+//            $str .= $key . '=' . $val . '&';
+//        }
+//        $pass = sha1($str);
+//
+//        $saveData['user'] = 'admin';
+//        $saveData['password'] = $pass;
+//        $saveData['salt'] = $salt;
+//        $saveData['role'] = '1';
+//        $saveData['unique_code'] = md5($pass);
+//        $saveData['add_time'] = date('YmdHis');
+//        $ID = M('User')->add($saveData);
+//    }
+
 }
