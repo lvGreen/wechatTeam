@@ -11,6 +11,7 @@ class IndexController extends Controller {
     }
 
     public function login() {
+        session_unset();
         $this->display();
     }
     
@@ -44,6 +45,8 @@ class IndexController extends Controller {
         if ($pass == $userInfo['password']) {
             $_SESSION['user'] = $userInfo['user'];
             $_SESSION['role'] = $userInfo['role'];
+            $_SESSION['userId'] = $userInfo['id'];
+            $_SESSION['unique_code'] = $userInfo['unique_code'];
             $result['error'] = '0';
             $result['url'] = U('Store/Shop/index');
         } else {
