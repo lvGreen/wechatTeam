@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>绿叶软件科技 & blank_page</title>
+    <include file='Public:publicHeader' />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/global.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/order_remind.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/content.css" media="all" />
+</head>
+<body>
+<include file='Public:publicTop' />
+<section id="page">
+    <include file='Public:publicCat' />
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <include file='Public:publicNotice' />
+                    <!-- /PAGE HEADER -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- SIMPLE STRIPED -->
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <!-- BOX -->
+                                    <div class="box border blue">
+                                        <include file='Public:publicTitle' />
+                                        <!-- 右边内容-->											
+                                        <div id="mainss" class="main" style="height:auto; padding-top:1px;">
+                                            <div class="contentbox">
+                                                <form id="shopConf" name="shopConf" method="post" action="{:U('Store/Shop/setCompanyConf')}" enctype="multipart/form-data">
+                                                    <table cellspacing="2" cellpadding="5" width="100%">
+                                                        <tr>
+                                                            <td class="label" width="15%">网站名称:</td>
+                                                            <td width="85%">
+                                                                <input name="site_name" id="site_name"  type="text" style="width:315px;" value="{$companyInfo.name}">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label">公司地址:</td>
+                                                            <td><input name="company_addr" id="company_url"  type="text" style="width:315px;" value="{$companyInfo.address}"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label">网站标题:</td>
+                                                            <td><input name="site_title" id="site_title"  type="text" style="width:315px;" value="{$companyInfo.title}"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label">网站logo:</td>
+                                                            <td>
+                                                                <img src="{$companyInfo.logo}" style='width:50px;height:50px;'/>
+                                                                <input name="site_logo" id="logo" type="file" value="" size="43"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label">客服电话:</td>
+                                                            <td><input name="custome_phone" id="custome_phone" value="{$companyInfo.service_phone}" type="text" style="width:315px;"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label">联系客服:</td>
+                                                            <td><input name="custome_qq" id="custome_qq" value="{$companyInfo.service_qq}" type="text" style="width:315px;"><br /><em>填写QQ号码,用逗号分隔。</em></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label">快商客服:</td>
+                                                            <td><input name="custome_email" id="custome_email" value="{$companyInfo.kuaishang_service}" type="text" style="width:315px;" />
+                                                                <p style="padding:0px; margin:0px; padding-top:5px;">下载软件注册：<a href="http://kuaishang.cn/" target="_blank">http://kuaishang.cn/</a>,&nbsp;&nbsp;<a href="http://kefu6.kuaishang.cn/bs/im.htm?cas=31235___565427&fi=33908" target="_blank" style="color:#FF0000">示例</a></p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label">邮件提醒：</td>
+                                                            <td>
+                                                        <input type='radio' name='setSendEmail' value='1' <if condition="$companyInfo.is_set_send_email eq '1' ">checked</if> /> 是
+                                                        <input type='radio' name='setSendEmail' value='2' <if condition="$companyInfo.is_set_send_email neq '1' ">checked</if>/> 否
+                                                        </td>
+                                                        </tr>
+                                                        <tr <if condition="$companyInfo.is_set_send_email neq '1' ">class='email dn'<else />class='email'</if>>
+                                                        <td class="label">设置发送邮箱：</td>
+                                                        <td>
+                                                            <input type='email' name='sendEmail' value='{$companyInfo.send_email}' />
+                                                        </td>
+                                                        </tr>
+                                                        <tr <if condition="$companyInfo.is_set_send_email neq '1' ">class='email dn'<else />class='email'</if>>
+                                                        <td class="label">发送邮箱密码：</td>
+                                                        <td>
+                                                            <input type='text' name='sendEmailPass' value='{$companyInfo.email_password}' />
+                                                        </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&nbsp;</td>
+                                                            <td>
+                                                                <input name="mes_save" class="mes_save" value="保存" type="submit">
+                                                            </td>
+                                                        </tr>
+                                                        <input type='hidden' name='type' value='{$edit}' />
+                                                        <input type='hidden' name='info' value='{$companyInfo.id}' />
+                                                    </table>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type='text/javascript'>
+    $(function(){
+        $('input[name=setSendEmail]').click(function(){
+            var sendEmail = $(this).val();
+            if(sendEmail == 1){
+                $('.email').removeClass('dn');
+            }else if(sendEmail == 2){
+                $('.email').addClass('dn');
+            }
+        });
+    });
+</script>
+</body>
+</html>

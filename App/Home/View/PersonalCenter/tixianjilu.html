@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+	<title>提现记录</title>
+	<meta charset="utf-8">
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<meta content="eric.wu" name="author">
+	<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+	<meta content="telephone=no, address=no" name="format-detection">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/addressEdit.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+    <script src="./js/com.js"></script>
+    <script src="./js/region.js"></script>
+	<script src="./js/layer.js"></script><link rel="stylesheet" href="./js/skin/layer.css" id="layui_layer_skinlayercss">
+	<script src="./js/jquery.form.js"></script>
+	<script src="./js/hide.js"></script>
+</head><iframe id="__WeixinJSBridgeIframe_SetResult" style="display: none;"></iframe><iframe id="__WeixinJSBridgeIframe" style="display: none;"></iframe>
+<body onselectstart="return true;" ondragstart="return false;">
+	<div data-role="container" class="container my_addressEdit">
+		<section data-role="body" class="body">
+			<div class="div_section">
+				<form id="form1">
+					<ul id="list_address_edit" class="list_address_edit">
+						<li style="color:#01a2b1">
+							您当前可提现金额为：0.00元
+						</li>
+						<li>
+							<div>
+								<input type="text" id="mobile" name="mobile" placeholder="联系人手机号：" maxlength="20">
+							</div>
+						</li>
+						<li>
+							<div>
+								<input type="text" id="money" name="money" placeholder="提现金额：" maxlength="20">
+							</div>
+						</li>
+						<li>
+							<div class="div_set_default" style="border-width:0; padding:0; margin:0;">
+																<label style="width:80px; display:initial; float:left">
+									<input type="radio" class="radio" name="default" value="3" style="float:left" rel="wechat">微支付</label>
+																								<label style="width:80px; display:initial;  float:left">
+									<input type="radio" class="radio" name="default" value="2" style="float:left" rel="zfb">支付宝</label>
+																								<label style="width:80px; display:initial;">
+									<input type="radio" class="radio" name="default" value="1" style="float:left" rel="bank">银行卡</label>
+																<label style="display:initial; clear:both;">&nbsp;</label>
+							</div>
+						</li>
+					</ul>
+					
+					<ul id="list_address_edit" class="list_address_edit wechat" style="display: none;">
+						<li>
+							<div>
+								<input type="text" id="nameWechat" name="nameWechat" placeholder="微信号：" maxlength="20">
+							</div>
+						</li>
+						<li>
+							<div>
+								<input type="text" id="nickWechat" name="nickWechat" placeholder="真实姓名：" maxlength="20">
+							</div>
+						</li>
+					</ul>
+					
+					<ul id="list_address_edit" class="list_address_edit zfb" style="display: none;">
+						<li>
+							<div>
+								<input type="text" id="nameZfb" name="nameZfb" placeholder="支付宝帐号：" maxlength="20">
+							</div>
+						</li>
+						<li>
+							<div>
+								<input type="text" id="nickZfb" name="nickZfb" placeholder="支付宝会员名：" maxlength="20">
+							</div>
+						</li>
+					</ul>
+					
+					<ul id="list_address_edit" class="list_address_edit bank" style="display: block;">
+						<li>
+							<div>
+								<input type="text" id="name" name="name" placeholder="收款人姓名：" maxlength="20">
+							</div>
+						</li>
+						<li>
+							<div class="address_select">
+								<select id="bank" name="bank" placeholder="">
+									<option value="0">==开户行==</option>
+									<option value="中国银行">中国银行</option>
+									<option value="中国工商银行">中国工商银行</option>
+									<option value="中国农业银行">中国农业银行</option>
+									<option value="中国建设银行">中国建设银行</option>
+									<option value="中国邮政储蓄银行">中国邮政储蓄银行</option>
+									<option value="交通银行">交通银行</option>
+									<option value="招商银行">招商银行</option>
+									<option value="华夏银行">华夏银行</option>
+									<option value="浦发银行">浦发银行</option>
+									<option value="中国民生银行">中国民生银行</option>
+									<option value="中信银行">中信银行</option>
+									<option value="兴业银行">兴业银行</option>
+									<option value="光大银行">光大银行</option>
+									<option value="-1">其它</option>
+								</select>
+							</div>
+						</li>
+						<li style="display:none;">
+							<div>
+								<input type="text" id="bankTxt" name="bankTxt" placeholder="开户行" maxlength="20">
+							</div>
+						</li>
+						<li>
+							<div>
+								<input type="text" id="account" name="account" placeholder="银行卡号：" maxlength="20">
+							</div>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div class="div_section_btn">
+				<ul>
+					<li>
+						<a href="javascript:;" class="btn red btnSubmit" id="btn_save_address ">提交</a>
+					</li>
+					<li>
+						<a href="/vshop/withdrawalsLog" class="btn red" id="btn_save_address">提现记录</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	 <footer data-role="footer">
+	 	
+<div data-role="copyright">
+	<div data-role="copyright" data-copyright="copyright1" class="copyright1">
+		<div class="widget_wrap">
+			<ul class="tbox">
+				<li>
+					<p class="box" style="padding-top:10px;">
+						<a href="index.html">店铺首页</a>
+						<a href="usercenter.html">会员中心</a>
+						<a href="about.html">关于我们</a>
+					</p>
+					<p style="height:50px; padding-top:15px; font-size:1.1em;"><a href="#">
+						©绿叶科技技术支持					</a></p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!--<script src="./js/weixin.js" type="text/javascript"></script>
+<script>
+weixin({
+	appId: "",
+	timestamp: '',
+	nonceStr: '',
+	signature: '',
+	title: "推荐一家微店：消费还可以赚钱，我已经开始赚钱啦，你也加入一起赚钱吧！",
+	desc: "消费变东家，人人是老板，世联红酒商城开启移动互联网时代新商业模式，", 
+	link: '',
+	img: "./photos/20150531113616_57667.jpg",
+});
+</script>-->
+	</footer>
+	</div>
+	
+	<!--返回顶部 start-->
+<div data-widget="tools" data-tools="tools_widget" id="tools_widget" class="tools_widget">
+	<div class="widget_wrap">
+		<ul class="tools_widget_wrap">
+			<li><a href="javascript:;" id="tools_widget_goTop" class="tools_widget_goTop hidden" style="">
+				顶部</a> </li>
+			<li id="tools_kfli" style=" display:none;">
+				<a href="#" id="tolls_widget_message" class="tolls_widget_message">客服</a> 
+			</li>
+		</ul>
+	</div>
+</div>
+<!--返回顶部 end-->
+
+<!--<input type="button" value="刷新一下" style="position:fixed; top:0; font-size:30px; z-index:999999" onclick="window.location.reload();" />-->
+	<!-- if condition="$guide and $guide['guide'] eq '1' and $subscribe neq true" -->
+
+
+
+<script>
+
+$(function(){
+	var flag = true;
+	// 提现方式选择变更时
+	$("input[type='radio']").change(function(){
+		$(".list_address_edit:gt(0)").hide();
+		$("."+$(this).attr("rel")).show();
+	});
+	// 银行信息选择变更时
+	$("#bank").change(function(){
+		if($(this).val() == "0") { $("#bankTxt").val("").parent().parent().hide(); }
+		else if($(this).val() == "-1") { $("#bankTxt").val("").parent().parent().show(); }
+		else { $("#bankTxt").val($(this).val()).parent().parent().hide(); }
+	});
+	// 提交
+	$('.btnSubmit').click(function(){
+		if($.trim($('#mobile').val()) == '') { layer.msg('请输入手机号'); return false; }
+		if($.trim($('#money').val()) == '') { layer.msg('请输入需要提现的金额'); return false; }
+		
+		var money = parseFloat('0.00');
+		if(parseFloat($('#money').val()) > money ){ layer.msg('金额不足，不能提现'); return false; }
+		if(parseFloat($('#money').val()) < parseFloat('10.00')){ layer.msg('提现金额需大于10.00元'); return false; }
+		
+		var $_val = $("input[type='radio']:checked").val();
+		if($_val == "1") { // 银行卡
+			if($.trim($('#name').val()) == '') { layer.msg('请输入收款人姓名'); return false; }
+			if($.trim($('#bankTxt').val()) == '') { layer.msg('请选择开户行'); return false; }
+			if($.trim($('#account').val()) == '') { layer.msg('请输入银行卡号'); return false; }
+		} else if($_val == "2") { // 支付宝
+			if($.trim($('#nameZfb').val()) == '') { layer.msg('请输入支付宝帐号'); return false; }
+			if($.trim($('#nickZfb').val()) == '') { layer.msg('请输入支付宝的会员名'); return false; }
+		}else if($_val == "3") { // 微信
+			if($.trim($('#nameWechat').val()) == '') { layer.msg('请输入微信号'); return false; }
+			if($.trim($('#nickWechat').val()) == '') { layer.msg('请输入微信昵称'); return false; }
+		}
+		
+		var obj = this;
+		$(obj).css({'background-color':'#CCCCCC'});
+		if(!flag) return;
+		flag = false;
+		
+		$('#form1').ajaxSubmit({
+			url:"",
+			type:"POST",
+			dataType: 'json',
+			success:function(data, st) {
+				layer.msg(data.msg);
+				if(data.status == -1) {
+					setTimeout(function(){ window.location.reload(); }, 1000);
+				}if(data.status == 1) {
+					setTimeout(function(){ window.location.href=data.data.url; }, 1000);
+				} else if(data.status == 0) {
+					$(obj).css({'background-color':''});
+					flag = true;
+				}
+			}
+		});
+	});
+	
+	
+	$("[name='default']:eq(0)").each(function(){
+		$(this).click();
+	});
+});
+
+</script></body></html>

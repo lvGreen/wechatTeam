@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <include file='Public:header' />
+    <link href="__PUBLIC__/Home/Css/home.css" rel="stylesheet">
+    <link href="__PUBLIC__/Home/Css/widget_menu.css" rel="stylesheet">
+    <script src="__PUBLIC__/Home/Js/common.js"></script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;" style="">
+    <div data-role="container" class="container home">
+        <section data-role="body" class="body" style="min-height: 768px;">
+            <!--商品列表 start-->
+            <div data-role="widget" data-widget="goodsList_1" class="goodsList_1">
+                <div class="widget_wrap listinfo">
+                    <ul>
+                        <script type="text/html" id="goods_list">
+                            <li>
+                                <a href="++URL++">
+                                    <div>
+                                        <img src="++IMG++" />
+                                    </div>
+                                    <div>
+                                        <p class="title">++TITLE++</p>
+                                        <label class="price">￥++PRICE++</label>
+                                    </div>
+                                </a>
+                            </li>
+                            </script>
+                            <volist name='goodsInfo' id='item'>
+                                <li>
+                                    <a href="{:U('Home/Goods/goodsDetail',array('code'=>$item['goods_code']))}">
+                                        <div>
+                                            <img src="{:getUploadUrl($item['small_img'])}">
+                                        </div>
+                                        <div>
+                                            <p class="title">{$item.title}</p>
+                                            <label class="price">￥{$item.price}</label>
+                                        </div>
+                                    </a>
+                                </li>
+                            </volist>
+                        </ul>
+                        <div class="listmore" style="color:#4a4a4a; padding:10px; text-align:center; font-size:11px">
+                            <span style="display: none;">
+                                <img src="./images/loader.gif">&nbsp;数据加载中...</span>
+                            <span style="">没有更多数据了</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--商品列表 end-->
+            </section>
+            <include file='Public:footerIndex' />
+        </div>
+    <include file='Public:deadLine' />
+    <include file='Public:footer' />
+    <script>
+        var flag, page = 1;
+        $(function () {
+            flag = true;
+            loadInfo();
+
+            $(window).scroll(function () {
+                if (!flag)
+                    return false;
+                // 滚动高度
+                var scrollTop = $(window).scrollTop();
+                // 标记距顶部位置
+                var top = $('.listmore').offset().top;
+
+                if (scrollTop > top - $(window).height()) {
+                    loadInfo();
+                }
+            });
+        });
+
+        function loadInfo() {
+            flag = false;
+            $('.listmore span:eq(0)').show();
+            setTimeout(function () {
+                $.get("#", {page: page++}, function (data) {
+                    $('.listmore span:eq(0)').hide();
+                    if (data.status == 1) {
+                        if (data.data.length <= 0) {
+                            flag = false;
+                            $('.listmore span:eq(1)').show();
+                            return;
+                        }
+                        var html = $("#goods_list").html();
+                        $.each(data.data, function (k, v) {
+                            var h = html.replaceAll("{__ID__}", v.id).replaceAll("{__IMG__}", v.image).replaceAll("{__TITLE__}", v.title).replaceAll("{__PRICE__}", v.price);
+                            $(".listinfo ul").append(h);
+                        });
+                        flag = true;
+                    }
+                }, 'json');
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0 auto;
+	padding:0;
+	font-family:"微软雅黑";
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#42495e;
+}
+body {
+	display:block;
+}
+body,div,ul,li,table,h1,h2,h3,h4,h5,p {
+	border:0;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+body {
+	position:relative;
+	background:#efeff4;
+}
+a {
+	cursor:pointer;
+	text-decoration:none;
+	outline:none;
+}
+img,object { max-width: 100%;}
+img { -ms-interpolation-mode: bicubic; }
+#map {
+	width:100%;
+}
+/*头部内容*/
+header {
+	text-align:center;
+	line-height:45px;
+	background:#02a0e7;
+	height:45px;
+	color:#fff;
+}
+/*正文内容*/
+section {
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+	border-bottom:#dfe5e8 1px solid;
+	text-align:center;
+}
+.yue {
+	padding-top:30px;
+}
+section p {
+	height:40px;
+	line-height:40px;
+	font-size:0.875em;
+	padding-bottom:10px;
+}
+section strong {
+	font-size:2em;
+	font-weight:bold;
+}
+#button {
+	margin-bottom:10px;
+	margin-top:30px;
+}
+#button1 {
+	margin-bottom:10px;
+}
+.but {
+	width:48%;
+	border-radius:5px;
+	color:#fff;
+	margin:0 auto;
+	height:35px;
+	line-height:35px;
+}
+.butt1 {
+	background:#ff5466;
+}
+.butt2 {
+	background:#b5b5b5;
+}

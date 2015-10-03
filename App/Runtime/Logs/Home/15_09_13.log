@@ -1,0 +1,9 @@
+[ 2015-09-13T22:52:30+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shop.shop_prize' doesn't exist
+

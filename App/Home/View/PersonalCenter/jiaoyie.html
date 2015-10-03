@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>交易额</title>
+        <link rel="stylesheet" type="text/css" href="./css/particular.css" />
+        <link href="./css/common.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./js/skin/layer.css" id="layui_layer_skinlayercss" />
+
+        <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+        <script src="./js/com.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/hide.js"></script>
+        <script src="./js/layer.js"></script>
+        <script src="./js/click_hover.js" type="text/javascript"></script>
+        <script type='text/javascript'>
+            function left_btn(n) {
+                var a_num = document.getElementById("menu").getElementsByTagName("div");
+                for (i = 0; i < a_num.length; i++) {
+                    a_num[i].className = i == n ? "select" : "";
+                }
+            }
+        </script>
+    </head>
+
+    <body onload="clickMenu('menu')">
+        <header>
+            <div id="outer">
+                <ul id="menu">
+                    <ul class="member">
+                        <li><div onclick="left_btn(0)"><a href="/wallet/leiji">全部</a></div></li>
+                        <li><div onclick="left_btn(1)"><a href="/wallet/leiji?l=1">一级</a></div></li>
+                        <li><div onclick="left_btn(2)"><a href="/wallet/leiji?l=2">二级</a></div></li>
+                        <li><div onclick="left_btn(3)"><a href="/wallet/leiji?l=3">三级</a></div></li>
+                    </ul>
+                </ul>
+            </div>
+        </header>
+        <!--头部内容结束-->
+        <!--内容部分-->
+        <section>
+            <div class="listinfo">
+
+            </div>
+            <div class="listmore">
+            </div>
+            <div style="height:50px;">&nbsp;</div>
+        </section>
+        <script type="text/html" id="list_show">
+            <table>
+                <tr>
+                    <td rowspan="3" align="center" style="width:30%"><img src="__ICON__" style="max-width:69px; max-height:68px; border-radius: 88px;" /></td>
+                    <td style="width:35%"><strong>__NICKNAME__</strong></td>
+                    <td style="width:35%"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><span>交易额：</span>__MONEY__</td>
+                    <td><span>关注时间：</span><strong>__TIME__</strong></td>
+                </tr>
+            </table>
+        </script>
+        <!--内容部分结束-->
+        <include file='Public:footer' />
+        <script>
+            var flag, page = 1;
+
+            $(function () {
+                flag = true;
+                loadInfo();
+
+                $(window).scroll(function () {
+
+                    // 滚动高度
+                    var scrollTop = $(window).scrollTop();
+                    // 标记距顶部位置
+                    var top = $('.listmore').offset().top;
+                    if (scrollTop > top - $(window).height()) {
+                        //loadInfo();
+                    }
+                });
+            });
+
+            function loadInfo() {
+                if (!flag)
+                    return false;
+                layer.load(2);
+                flag = false;
+
+                setTimeout(function () {
+                    $.get("", {page: page++}, function (data) {
+                        layer.closeAll('loading');
+
+                        if (data.status == 1) {
+                            if (data.data.length <= 0) {
+                                if ($(".listinfo table").length < 1) {
+                                    $(".listinfo").css("text-align", "center").append('<div style="padding-top:120px; padding-bottom:120px; font-size:16px; color:silver;">暂无信息</div>');
+                                } else
+                                    layer.msg("没有更多信息了");
+
+                                flag = false;
+                                return;
+                            }
+
+                            var html = $("#list_show").html();
+                            $.each(data.data, function (k, v) {
+                                if (v.icon.indexOf("http://") > -1)
+                                    icon = v.icon;
+                                else
+                                    icon = "" + v.icon;
+
+                                var h = html.replaceAll("__ICON__", icon).replaceAll("__NICKNAME__", v.nickname).replaceAll("__MONEY__", v.money).replaceAll("__TIME__", getLocalTime(v.regtime, "yyyy-MM-dd"));
+
+                                $(".listinfo").append(h);
+                            });
+
+                            flag = true;
+                        }
+
+                    }, 'json');
+                }, 1000);
+            }
+        </script><div class="layui-layer-shade" id="layui-layer-shade1" times="1" style="z-index:19891014; background-color:#000; opacity:0.01; filter:alpha(opacity=1);"></div><div class="layui-layer layui-anim layui-layer-loading " id="layui-layer1" type="loading" times="1" showtime="0" contype="string" style="z-index: 19891015; top: 302px; left: 362.5px;"><div class="layui-layer-content layui-layer-loading2"></div><span class="layui-layer-setwin"></span></div></body><iframe id="__WeixinJSBridgeIframe_SetResult" style="display: none;"></iframe><iframe id="__WeixinJSBridgeIframe" style="display: none;"></iframe></html>

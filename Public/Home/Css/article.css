@@ -1,0 +1,14 @@
+*{-webkit-box-sizing: border-box;; margin:0; padding:0;}
+.body{ margin:auto;min-height:100%;	position:relative;	display:block;	background-size:100% 100%;	-webkit-box-sizing: border-box;min-width:320px; float:left; width:100%;}
+
+/*article*/
+.body.article header {}
+.body.article  header img{ width:100%; }
+.body.article section >article{padding:10px 10px;}
+.body.article section >article h3{	font-size:18px;	line-height:23px; width:100%; display:block; text-align:center; color:#65cacb;  padding:20px 0 10px 0}
+.body.article section >article .content{	padding:10px 5px;	line-height:24px;	}
+.body.article section >article .titlediv{ width:100%; height:20px; line-height:20px;  position:relative}
+.body.article section >article .titlediv .border{background:-webkit-linear-gradient(left ,#fff,#929292); height: 2px;  width:50%; position:absolute; top:9px; z-index:-1;}
+.body.article section >article .titlediv .border.right{background:-webkit-linear-gradient(left ,#929292,#fff); right:0}
+.body.article section >article .titlediv .title{ width:100px; margin:0 auto; background:#fff; text-align:center; color:#6d6d6d; font-size:12px; font-size:14px}
+.body.article section >article img{ max-width:100%;}

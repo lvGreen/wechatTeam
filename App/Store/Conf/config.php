@@ -1,7 +1,14 @@
 <?php
 return array(
-    'aqiyiHtml'=>array(
-        array('http://kaixin58.com/forum.php?mod=forumdisplay&fid=2&filter=typeid&typeid=1', 'http://kaixin58.com/thread-{changeID}-1-1.html'),
-        array('http://qukoo.cn/index.php?control=fenlei&id=6', 'http://qukoo.cn/index.php?control=article&id={changeID}'),
-    ),
+    'verify' => array(
+        'imageH'=> 30,
+        'imageW'=> 120,
+        'fontSize'=>14,
+        'expire'=>1200,
+        ),
+    'commonPassWord'=>'ahgsjgaguq7651725790ghsgafsh',
+    'uploadPath'=>'/data/www/project/shop/App/Upload/',
+    'allowedUploadImg'=>array('image/jpeg','image/jpg','image/gif','image/png'),
+    'allowedUploadSize'=>1024*1024*4,
+    'type'=>'Store'
 );

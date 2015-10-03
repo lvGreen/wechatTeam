@@ -1,0 +1,47 @@
+<footer data-role="footer">
+    <div data-role="copyright">
+        <div data-role="copyright" data-copyright="copyright1" class="copyright1">
+            <div class="widget_wrap">
+                <ul class="tbox">
+                    <li>
+                        <p class="box" style="padding-top:10px;">
+                            <a href="{:U('Home/Shop/index',array('shop'=>$_SESSION['wapShop']))}">店铺首页</a>
+                            <a href="{:U('Home/PersonalCenter/index')}">会员中心</a>
+                            <a href="{:U('Home/Shop/about',array('shop'=>$_SESSION['wapShop']))}">关于我们</a>
+                        </p>
+                        <p style="height:50px; padding-top:15px; font-size:1.1em;">
+                            <a href="#">{$_SESSION['shopInfo']['name']}支持</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <if condition="$goods neq '' ">
+        <div data-role="widget" data-widget="">
+            <div class="widget_wrap">
+                <ul class="fixed_btn">
+                    <ol id="fixed_btn" class="tbox" style="position: fixed;">
+                        <li id="headerShopTu">
+                            <div style="width: 45px">
+                                <a href="buycar.html" id="btn_link_shopcart" class="btn_add btn_add_shopcart" data-count="1">&nbsp;</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <div>
+                                    <a href="javascript:;" id="btn_add_shopcart" class="btn on">
+                                        <label>加入购物车</label></a>
+                                </div>
+                                <div>
+                                    <a href="ordersubmit.html" id="btn_buy" class="btn red on">
+                                        <label>立刻购买</label></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </ul>
+            </div>
+        </div>
+    </if>
+</footer>

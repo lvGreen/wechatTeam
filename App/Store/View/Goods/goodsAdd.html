@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>绿叶软件科技 & blank_page</title>
+    <include file='Public:publicHeader' />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/global.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/order_remind.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/content.css" media="all" />
+</head>
+<body>
+<include file='Public:publicTop' />
+<section id="page">
+    <include file='Public:publicCat' />
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <include file='Public:publicNotice' />
+                    <!-- /PAGE HEADER -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- SIMPLE STRIPED -->
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <!-- BOX -->
+                                    <div class="box border blue">
+                                        <include file='Public:publicTitle' />
+                                        <!-- 右边内容-->											
+                                        <div id="mainss" class="main" style="height: 969px; padding-top: 1px;">
+                                            <div class="contentbox">
+                                                <form action="{:U('Store/Goods/addGoods')}" method="post" enctype="multipart/form-data" name="theForm" id="theForm">
+                                                    <div class="menu_content">
+                                                        <table cellspacing="2" cellpadding="5" width="100%" id="tab1">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="label">商品名称:</td>
+                                                                    <td>
+                                                                        <input name="goods_name" id="goods_name" type="text" size="43" value="{$goodsInfo.title}">
+                                                                        <span style="color:#FF0000">*</span><span class="goods_name_mes"></span>
+                                                                        &nbsp;&nbsp;&nbsp;<b>商品条形码:</b>
+                                                                        <input name="goods_sn" id="goods_sn" type="text" size="23" value="{$goodsInfo.bar_code}" />
+                                                                        <b>商品编号:</b>
+                                                                        <input name="goods_bianhao" id="goods_bianhao" type="text" size="23" value="{$goodsInfo.code}" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">是否上架：</td>
+                                                                    <td>
+                                                                        <input name="is_online" value="1" size="20" type="radio" <if condition="$goodsInfo.status eq '1' "> checked </if> />是
+                                                                        <input name="is_online" value="0" size="20" type="radio" <if condition="$goodsInfo.status eq '0' "> checked </if> />否
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">是否新品：</td>
+                                                                    <td>
+                                                                        <input name="is_new" value="1" size="20" type="radio" <if condition="$goodsInfo.is_new eq '1' "> checked </if> />是
+                                                                        <input name="is_new" value="0" size="20" type="radio" <if condition="$goodsInfo.is_new eq '0' "> checked </if> />否
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">是否热销：</td>
+                                                                    <td>
+                                                                        <input name="is_hot" value="1" size="20" type="radio" <if condition="$goodsInfo.is_hot eq '1' "> checked </if> />是
+                                                                        <input name="is_hot" value="0" size="20" type="radio" <if condition="$goodsInfo.is_hot eq '0' "> checked </if> />否
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">是否推荐：</td>
+                                                                    <td>
+                                                                        <input name="is_recommend" value="1" size="20" type="radio" <if condition="$goodsInfo.is_recommend eq '1' "> checked </if> />是
+                                                                        <input name="is_recommend" value="0" size="20" type="radio" <if condition="$goodsInfo.is_recommend eq '0' "> checked </if> />否
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">商品单位：</td>
+                                                                    <td>
+                                                                        <b>商品重量：</b><input name="goods_weight" value="{$goodsInfo.weight}" size="20" type="text" /> (克／个)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">商品库存数量：</td>
+                                                                    <td>
+                                                                        <input name="goods_number" value="{$goodsInfo.count}" size="20" type="text" />
+                                                                        <b>库存警告数量：</b><input name="warn_number" value="{$goodsInfo.alarm_count}" size="20" type="text" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="150"><a href="javascript:;" class="addsubcate"></a>商品类别:</td>
+                                                                    <td>
+                                                                        <select name="type" id="cat_id">
+                                                                            <option value="0">--选择类别--</option>
+                                                                            <option value="1" <if condition="$goodsInfo.type eq '1' "> selected </if> >积分商品</option>
+                                                                            <option value="2" <if condition="$goodsInfo.type eq '2' "> selected </if> >虚拟商品</option>
+                                                                            <option value="3" <if condition="$goodsInfo.type eq '3' "> selected </if> >实体商品</option>
+                                                                        </select>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="150"><a href="javascript:;" class="addsubcate"></a>所在分类:</td>
+                                                                    <td>
+                                                                        <select name="cat_id" id="cat_id">
+                                                                            <option value="0">--选择分类--</option>
+                                                                            <volist name='classInfo' id='item'>
+                                                                                <option value="{$item.id}" <if condition="$goodsInfo.class_id eq $item.id "> selected </if> >{$item.name}</option>
+                                                                                <if condition="$item.next neq '' ">
+                                                                                    <volist name='item.next' id='class'>
+                                                                                        <option value="{$class.id}" <if condition="$goodsInfo.class_id eq $class.id "> selected </if> >{$class.name}</option>
+                                                                                    </volist>
+                                                                                </if>
+                                                                            </volist>
+                                                                        </select>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">采购价:</td>
+                                                                    <td>
+                                                                        <input name="purchase_price" id="market_price" type="text" size="13" value="{$goodsInfo.purchase_price}" />
+                                                                        <b>市场价:</b><input name="market_price" id="shop_price" type="text" size="13" value="{$goodsInfo.market_price}" />
+                                                                        <b>原始价:</b><input name="shop_price" id="shop_price" type="text" size="13" value="{$goodsInfo.price}" />
+                                                                        <b>折扣价:</b><input name="pifa_price" id="pifa_price" type="text" size="13" value="{$goodsInfo.discount_price}" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" style="color:#FF0000">总佣金:</td>
+                                                                    <td align="left" style="color:#FF0000">
+                                                                        <ul class="ajaxshowmoney">
+                                                                            <li style="width:180px; float:left; position:relative; padding-bottom:5px;">
+                                                                                <input name="takemoney" id="takemoney1" type="text" size="8" value="{$goodsInfo.distribution_price}" />元
+                                                                            </li>
+                                                                            <li style="width:100px; float:left"><a style="text-decoration:underline; color:#66CC00" href="http://www.zmnkj.net/admin/weixin.php?type=userconfig" target="_blank">【查看佣金比例】</a></li>
+                                                                            <div style="clear:both"></div>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">上传商品主图:</td>
+                                                                    <td>
+                                                                        <img src="{:getUploadUrl($goodsInfo['img'])}" />
+                                                                        <input name="original_img" id="goods" type="file" value="" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">商品缩略图:</td>
+                                                                    <td>
+                                                                        <img src="{:getUploadUrl($goodsInfo['small_img'])}" />
+                                                                        <input name="goods_thumb" id="goods_thumb" type="file" value="" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="150">产品详情:</td>
+                                                                    <td>
+                                                                        <textarea name="goods_details" id="goods_details" style="width: 60%; height: 65px; overflow: auto;">{$goodsInfo.content}</textarea>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">Meta关键字:</td>
+                                                                    <td>
+                                                                        <textarea name="meta_keys" id="meta_keys" style="width: 60%; height: 65px; overflow: auto;">{$goodsInfo.meta_keywords}</textarea>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">Meta描述:</td>
+                                                                    <td>
+                                                                        <textarea name="meta_desc" id="meta_desc" style="width: 60%; height: 65px; overflow: auto;">{$goodsInfo.meta_dis}</textarea>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <input type='hidden' name='goodsId' value='{$goodsInfo.id}' />
+                                                        <p style="text-align:center;">
+                                                            <input class="new_save" value="添加保存" type="Submit" style="cursor:pointer">&nbsp;
+                                                        </p>
+                                                        <div style="clear:both"></div>
+                                                    </div> 
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type='text/javascript'>
+    $(function () {
+        $('.changeStatus').click(function () {
+            var classId = $(this).attr('rel');
+            $.post("{:U('Store/GoodsBrand/changeClassStatus')}", {'classId': classId}, function (data) {
+                data = eval(data);
+                if (data['error'] == '0') {
+                    alert('修改状态成功！');
+                    window.location.reload();
+                } else {
+                    alert(data['msg']);
+                }
+            });
+        });
+
+//        $('.quxuanall').click(function () {
+//            if (this.checked == true) {
+//                $("input[name='quanxuan']").each(function () {
+//                    this.checked = true;
+//                });
+//            } else {
+//                $("input[name='quanxuan']").each(function () {
+//                    this.checked = false;
+//                });
+//            }
+//        });
+//
+//        $('#bathdel').click(function () {
+//            if (confirm("确定删除吗？将会删除下级分类！考虑清楚了吗？")) {
+//                var arr = [];
+//                $('input[name="quanxuan"]').each(function () {
+//                    arr.push($(this).val());
+//                })
+//                var str = arr.join('+');
+//                $.post("{:U('Store/GoodsBrand/delClassStatus')}", {'str': str}, function (data) {
+//                    data = eval(data);
+//                    alert(data['msg']);
+//                });
+//            }
+//        });
+    });
+</script>
+</body>
+</html>

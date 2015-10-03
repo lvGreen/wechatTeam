@@ -1,0 +1,113 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>提现明细</title>
+<link rel="stylesheet" type="text/css" href="./css/tixian.css">
+<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+<script src="./js/com.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/hide.js"></script>
+<script src="./js/layer.js"></script><link rel="stylesheet" href="./js/skin/layer.css" id="layui_layer_skinlayercss">
+</head>
+
+<body>
+<div id="map">
+	<!--头部-->
+    <header>提现明细 </header>
+    <!--头部内容结束-->
+    <!--内容部分-->
+    <section>
+    	<table border="0" cellspacing="0">
+        	<thead>
+                <tr>
+                    <td>金额</td>
+                    <td>时间</td>
+                    <td>状态</td>
+                </tr>            
+            </thead>
+            <tbody class="listinfo">
+            	
+            <tr><td style="text-align:center" colspan="3">暂无信息</td></tr></tbody>
+        </table>
+		<div class="listmore">
+		</div>
+		<div style="height:50px;">&nbsp;</div>
+	</section>
+	
+	<script type="text/html" id="list_show">
+	<tr>
+		<td><span>￥__MONEY__</span></td>
+		<td>__TIME__</td>
+		<td>__STATUS__</td>
+	</tr>
+	</script>
+    <!--内容部分结束-->
+    <!--底部内容-->
+    <!--<footer>
+    	<ul>
+        	<a><li class="left">设置提现方式</li></a>
+        </ul>
+    </footer>-->
+</div>
+
+
+
+
+<script>
+var flag, page = 1;
+
+$(function(){
+	flag = true;
+	loadInfo();
+	
+	$(window).scroll(function(){
+		
+		// 滚动高度
+		var scrollTop = $(window).scrollTop();
+		// 标记距顶部位置
+		var top = $('.listmore').offset().top;
+		if(scrollTop > top - $(window).height()) {
+			//loadInfo();
+		}
+	});
+});
+
+function loadInfo() {
+	if(!flag) return false;
+	layer.load(2); flag = false;
+	
+	setTimeout(function(){
+		$.get("", {page:page++}, function(data){
+			 layer.closeAll('loading');
+			
+			if(data.status == 1) {
+				if(data.data.length <= 0) { 
+					if($(".listinfo tr").length < 1) {
+						$(".listinfo").append('<tr><td style="text-align:center" colspan="3">暂无信息</td></tr>');
+					} else layer.msg("没有更多信息了");
+				
+					flag = false; return; 
+				}
+			
+				var html = $("#list_show").html();
+				$.each(data.data, function(k, v) {
+					switch(v.status) {
+						case '0': status = '<font style="color:red">申请中</font>'; break;
+						case '1': status = '<font style="color:#FF00FF">已审核，待打款</font>'; break;
+						case '2': status = '<font style="color:#CCCCCC">拒绝</font>'; break;
+						case '3': status = '提现成功'; break;
+						default : status = '无'; break;
+					}
+				
+					var h = html.replaceAll("__MONEY__", v.money).replaceAll("__TIME__", getLocalTime(v.log_time, 'yyyy-MM-dd')).replaceAll("__STATUS__", status);
+					
+					$(".listinfo").append(h);
+				});
+				
+				flag = true;
+			}
+			
+		}, 'json');
+	}, 1000);
+}
+</script></body><iframe id="__WeixinJSBridgeIframe_SetResult" style="display: none;"></iframe><iframe id="__WeixinJSBridgeIframe" style="display: none;"></iframe></html>

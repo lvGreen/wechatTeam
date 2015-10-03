@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>绿叶软件科技 & blank_page</title>
+    <include file='Public:publicHeader' />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/global.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/order_remind.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/content.css" media="all" />
+</head>
+<body>
+<include file='Public:publicTop' />
+<section id="page">
+    <include file='Public:publicCat' />
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <include file='Public:publicNotice' />
+                    <!-- /PAGE HEADER -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- SIMPLE STRIPED -->
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <!-- BOX -->
+                                    <div class="box border blue">
+                                        <include file='Public:publicTitle' />
+                                        <!-- 右边内容-->											
+                                        <div id="mainss" class="main" style="height:auto; padding-top:1px;">
+                                            <div class="contentbox">
+                                                <table cellspacing="2" cellpadding="5" width="100%">
+                                                    <tr>
+                                                        <th colspan="7" align="left">商品分类</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th width="60"><label>选择</label></th>
+                                                        <th width="40%">品牌名称</th>
+                                                        <th>品牌标题</th>
+                                                        <th>商品数量</th>
+                                                        <th>状态</th>
+                                                        <th width="35">排序</th>
+                                                        <th>操作</th>
+                                                    </tr>
+                                                    <volist name='brandList' id='item'>
+                                                        <tr>
+                                                            <td><input type="checkbox" name="quanxuan" value="{$item.id}" class="gids"/></td>
+                                                            <td>{$item.name}</td>
+                                                            <td>{$item.title}</td>
+                                                            <td>{$item.goods_count}</td>
+                                                            <td class='changeStatus' rel='{$item.id}'>
+                                                        <if condition="$item.is_delete eq '1' ">
+                                                            <img src="__PUBLIC__/Store/Image/goods/yes.gif" class="activeop" lang="is_show" />
+                                                            <else />
+                                                            <img src="__PUBLIC__/Store/Image/goods/no.gif" class="activeop" lang="is_show" />
+                                                        </if>
+                                                        </td>
+                                                        <td><span class="vieworder">{$item.index}</span></td>
+                                                        <td>
+                                                            <a href="{:U('Store/GoodsBrand/viewGoodsClass',array('id'=>$item['id']))}" title="编辑">
+                                                                <img src="__PUBLIC__/Store/Image/goods/icon_edit.gif" title="编辑"/>
+                                                            </a>
+                                                        </td>
+                                                        </tr>
+                                                        <if condition="item.next neq '' ">
+                                                            <volist name='item.next' id='class'>
+                                                                <tr>
+                                                                    <td><input type="checkbox" name="quanxuan" value="{$class.id}" class="gids"/></td>
+                                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$class.name}</td>
+                                                                    <td>{$class.title}</td>
+                                                                    <td>{$class.goods_count}</td>
+                                                                    <td class='changeStatus' rel='{$class.id}'>
+                                                                <if condition="$class.is_delete eq '1' ">
+                                                                    <img src="__PUBLIC__/Store/Image/goods/yes.gif" class="activeop" lang="is_show" />
+                                                                    <else />
+                                                                    <img src="__PUBLIC__/Store/Image/goods/no.gif" class="activeop" lang="is_show" />
+                                                                </if>
+                                                                </td>
+                                                                <td><span class="vieworder">{$class.index}</span></td>
+                                                                <td>
+                                                                    <a href="{:U('Store/GoodsBrand/viewGoodsClass',array('id'=>$class['id']))}" title="编辑">
+                                                                        <img src="__PUBLIC__/Store/Image/goods/icon_edit.gif" title="编辑"/>
+                                                                    </a>
+                                                                </td>
+                                                                </tr>
+                                                            </volist>
+                                                        </if>
+                                                    </volist>
+                                                    <tr>
+                                                        <td colspan="7"> <input type="checkbox" class="quxuanall" value="checkbox" />
+                                                            <input type="button" name="del" value="批量删除" class="bathdel" id="bathdel"/>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type='text/javascript'>
+    $(function(){
+        $('.changeStatus').click(function(){
+            var classId = $(this).attr('rel');
+            $.post("{:U('Store/GoodsBrand/changeClassStatus')}",{'classId':classId}, function(data){
+                data = eval(data);
+                if(data['error'] == '0'){
+                    alert('修改状态成功！');
+                    window.location.reload();
+                }else{
+                    alert(data['msg']);
+                }
+            });
+        });
+        
+        $('.quxuanall').click(function(){
+            if(this.checked == true){
+                $("input[name='quanxuan']").each(function(){this.checked = true;});
+            }else{
+                $("input[name='quanxuan']").each(function(){this.checked = false;});
+            }
+        });
+        
+        $('#bathdel').click(function(){
+            if(confirm("确定删除吗？将会删除下级分类！考虑清楚了吗？")){
+                var arr = [];
+                $('input[name="quanxuan"]').each(function(){
+                    arr.push($(this).val());
+                })
+                var str = arr.join('+');
+                $.post("{:U('Store/GoodsBrand/delClassStatus')}",{'str':str},function(data){
+                    data = eval(data);
+                    alert(data['msg']);
+                    window.location.reload();
+                });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

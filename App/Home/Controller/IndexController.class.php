@@ -4,7 +4,7 @@ use Think\Controller;
 use Think\Page;
 
 class IndexController extends BaseController {
-    public function index(){
-        
+    function __construct() {
+        parent::__construct();
     }
 }

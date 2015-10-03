@@ -102,3 +102,17 @@ function dateformat($str, $format = 'Y-m-d H:i:s') {
     }
     return $date;
 }
+
+/**
+ * 获取上传文件路径
+ * @param type $str
+ * @return string
+ */
+function getUploadUrl($str){
+    if(C('type') == 'Home'){
+        $url = C('adminUploadUrl').$_SESSION['wapShop'].'/'.$str;
+    }else if(C('type') == 'Store'){
+        $url = C('adminUploadUrl').$_SESSION['unique_code'].'/'.$str;
+    }
+    return $url;
+}

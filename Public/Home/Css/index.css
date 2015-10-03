@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0 auto;
+	padding:0;
+	font-family:"微软雅黑";
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#42495e;
+}
+body {
+	display:block;
+}
+body,div,ul,li,table,h1,h2,h3,h4,h5,p {
+	border:0;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+body {
+	position:relative;
+	background:#efeff4;
+}
+a {
+	cursor:pointer;
+	text-decoration:none;
+	outline:none;
+}
+img,object { max-width: 100%;}
+img { -ms-interpolation-mode: bicubic; }
+#map {
+	width:100%;
+}
+/*头部内容*/
+header {
+	background:#02a0e7;
+	height:192px;
+}
+nav div {
+	height:143px;
+}
+nav div table td a,nav div table p,nav div table p span,nav ul li,footer ul li {
+	color:#fff;
+}
+nav div table td {
+	height:50px;
+}
+nav div table p,nav ul li {
+	float:left;
+}
+nav div table p span {
+	font-size:2.1em;
+}
+nav div table,nav ul {
+	width:90%;
+}
+nav div table {
+	margin:0 auto;
+	padding:10px 0;
+}
+nav ul {
+	background:#0298db;
+	padding:0 5%;
+}
+nav ul,nav ul li {
+	height:49px;
+}
+nav ul li {
+	line-height:49px;
+}
+nav ul li.a {
+	float:right;
+}
+nav ul li.b {
+	padding-left:10px;
+}
+/*正文内容*/
+section table {
+	width:100%;
+	background:#fff;
+	border-bottom:#dfe5e8 1px solid;
+}
+section table td {
+	text-align:center;
+	height:59px;
+	width:50%;
+	padding:14px 0;
+}
+section dl {
+	width:86%;
+	padding-right:5%;
+	height:59px;
+}
+section dl dt,section dl dt dd {
+	line-height:29px;
+}
+section dl.aa {
+	margin-right:0;
+	border-right:#dfe5e8 1px solid;
+}
+section dl.bb {
+	margin-left:0;
+}
+section dl dd p,section dl dd p span {
+	color:#008ece;
+}
+section dl dd p span {
+	font-size:1.5em;
+}
+section dl dt {
+	font-size:0.75em;
+}
+.border_bottom {
+	height:87px;
+	margin-left:5%;
+	border-bottom:#dfe5e8 1px solid;
+}
+
+.border_bottom1 {
+	margin-left:0;
+	margin-right:5%;
+}
+/*底部内容*/
+footer {
+	position:relative;
+}
+footer ul {
+	position: fixed;
+	bottom:20px;
+	left:50%;
+	width:70%;
+	margin-left:-35%;
+}
+footer ul li {
+	width:40%;
+	font-size:0.75em;
+	height:30px;
+	padding:0 8px;
+	line-height:30px;
+	text-align:center;
+	background:#02a0e7;
+	float:left
+}
+footer ul li.left {
+	border-right:#fff 1px solid;
+	border-top-left-radius:50px;
+	border-bottom-left-radius:50px;
+}
+footer ul li.right {
+	border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+}

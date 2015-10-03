@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>绿叶软件科技 & blank_page</title>
+    <include file='Public:publicHeader' />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/global.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/order_remind.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/content.css" media="all" />
+</head>
+<body>
+<include file='Public:publicTop' />
+<section id="page">
+    <include file='Public:publicCat' />
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <include file='Public:publicNotice' />
+                    <!-- /PAGE HEADER -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- SIMPLE STRIPED -->
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <!-- BOX -->
+                                    <div class="box border blue">
+                                        <include file='Public:publicTitle' />
+                                        <!-- 右边内容-->	
+                                        <div class="contentbox">
+                                            <form id="form1" name="form1" method="post" action="{:U('Store/GoodsBrand/addGoodsClass')}" enctype="multipart/form-data">
+                                                <table cellspacing="2" cellpadding="5" width="100%">
+                                                    <tr>
+                                                        <td class="label" width="150">分类名称:</td>
+                                                        <td><input name="cat_name" id="cat_name"  maxlength="60" size="30" value="{$singleClassInfo.name}" type="text"><span class="require-field">*</span><span class="cat_name_mes"></span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">分类标题:</td>
+                                                        <td><input name="cat_title"  size="50" value="{$singleClassInfo.title}" type="text" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">分类广告:</td>
+                                                        <td>
+                                                            <img src='{$singleClassInfo.adImgUrl}' />
+                                                            <input name="cat_img" id="cateimg" type="file" value="{$singleClassInfo.ad_img}" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">分类图标:</td>
+                                                        <td>
+                                                            <img src='{$singleClassInfo.classLogoUrl}' />
+                                                            <input name="cat_icon" id="cateicon" type="file" value="{$singleClassInfo.class_logo}" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">上级分类:</td>
+                                                        <td>
+                                                            <select name="parent_id" id="parent_id">
+                                                                <option value="0" <if condition="$item.id eq 0 "> selected </if>>顶级分类</option>
+                                                                <if condition="$classInfo neq '' ">
+                                                                    <volist name='classInfo' id='item'>
+                                                                        <option value="{$item.id}" <if condition="$item.id eq $singleClassInfo.parent_id"> selected </if>>{$item.name}</option>
+                                                                    </volist>
+                                                                </if>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">排序:</td>
+                                                        <td><input name="sort_order" maxlength="60" size="50" value="{$singleClassInfo.index}" type="text"></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <tr>
+                                                        <td class="label">是否启用:</td>
+                                                        <td>
+                                                            <label><input name="is_show" value="1" <if condition="$singleClassInfo.is_delete neq '2' ">checked="checked"</if> type="radio" /> 是 </label>
+                                                            <label><input name="is_show" value="0" <if condition="$singleClassInfo.is_delete eq '2' ">checked="checked"</if> type="radio" /> 否     </label>  
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Meta关键字:</td>
+                                                        <td><input name="keywords" maxlength="60" size="50" value="{$singleClassInfo.desc}" type="text" />
+                                                            <br /><span style="display: block;" id="notice_keywords">关键字为选填项，其目的在于方便外部搜索引擎搜索</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">Meta描述:</td>
+                                                        <td><textarea name="cat_desc" cols="60" rows="4">{$singleClassInfo.keywords}</textarea></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="label">&nbsp;操作</td>
+                                                        <input type='hidden' name='id' value='{$singleClassInfo.id}'>
+                                                        <td align="left"><br>
+                                                            <input class="new_save" value=" 确定 " type="submit" />
+                                                            <input class="button" value=" 重置 " type="reset" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

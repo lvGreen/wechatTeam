@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <include file='Public:header' />
+        <link href="__PUBLIC__/Home/Css/address.css" rel="stylesheet">
+        <script src="__PUBLIC__/Home/Js/layer.js"></script><link rel="stylesheet" href="./css/layer.css" id="layui_layer_skinlayercss">
+        <script src="__PUBLIC__/Home/Js/hide.js"></script>
+    </head>
+    <body onselectstart="return true;" ondragstart="return false;">
+        <div data-role="container" class="container my_address">
+            <header data-role="header"></header>
+            <section data-role="body" class="body">
+                <div style="width:100%; text-align:center; padding-top:80px; min-height:250px">
+                    <img src="./images/w_22.png" style="width:180px" /></div>
+            </section>
+            <footer data-role="footer">
+                <div data-role="copyright">
+                    <div data-role="copyright" data-copyright="copyright1" class="copyright1">
+                        <div class="widget_wrap">
+                            <ul class="tbox">
+                                <li>
+                                    <p class="box" style="padding-top:10px;">
+                                        <a href="index.html">店铺首页</a>
+                                        <a href="usercenter.html">会员中心</a>
+                                        <a href="about.html">关于我们</a>
+                                    </p>
+                                    <p style="height:50px; padding-top:15px; font-size:1.1em;">
+                                        <a href="#"> ©绿叶科技技术支持 </a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_section_btn footer_div_section_btn">
+                    <div class="widget_wrap">
+                        <ul>
+                            <li style="margin-bottom:20px">
+                                <a href="editaddress.html" class="btn red" id="btn_addAddress" style="color:#FFFFFF">新增收货地址</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" onclick="getaddr();" class="btn red" id="btn_addAddress" style="color:#FFFFFF">使用微信收货地址</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <include file='Public:footer' />
+        <script type='text/javascript'>
+            $(function () {
+                $("input[type='radio'][name='radAddress']").click(function () {
+                    window.location.href = $('#bu').val() + '&addr=' + $(this).val();
+                });
+            });
+
+            function getaddr() {
+                WeixinJSBridge.invoke(
+                        'editAddress',
+                        {
+                            "appId": "wx0cd0ce55d9b28144",
+                            "scope": "jsapi_address",
+                            "signType": "sha1",
+                            "addrSign": "b03a25d619d8701a7a00d60451e6e7cc3ab443e4",
+                            "timeStamp": "1442803064",
+                            "nonceStr": "123456"
+                        },
+                function (res) {
+                    var msg = res.err_msg;
+                    var arr = msg.split(':');
+                    if (arr[1] == 'ok') {
+                        layer.load(2);
+                        $.post("/vshop/editAddress", {
+                            from: "weixin",
+                            name: res.userName,
+                            tel: res.telNumber,
+                            province: res.proviceFirstStageName,
+                            city: res.addressCitySecondStageName,
+                            area: res.addressCountiesThirdStageName,
+                            address: res.addressDetailInfo,
+                        }, function (data) {
+                            if (data.status == -1) {
+                                layer.closeAll('loading');
+                                layer.msg(data.msg);
+                                setTimeout(function () {
+                                    window.location.reload();
+                                }, 1000);
+                            } else if (data.status == 0) {
+                                layer.closeAll('loading');
+                                layer.msg(data.msg);
+                            } else if (data.status == 1) {
+                                setTimeout(function () {
+                                    window.location.reload();
+                                }, 1000);
+                            }
+                        }, "json");
+                    }
+                }
+                );
+            }
+        </script>
+    </body>
+</html>

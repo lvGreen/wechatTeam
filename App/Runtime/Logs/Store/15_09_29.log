@@ -1,0 +1,1178 @@
+[ 2015-09-29T00:03:51+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0016s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2015-09-29T00:04:29+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0017s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2015-09-29T10:16:50+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0322s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0091s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0017s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 152 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2015-09-29T10:24:28+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0018s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 152 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000998s ]
+
+[ 2015-09-29T10:24:34+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 152 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000543s ]
+
+[ 2015-09-29T10:25:07+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0059s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0017s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 152 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2015-09-29T10:26:07+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0009s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 152 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-09-29T10:26:24+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 152 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2015-09-29T10:31:39+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0020s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 152 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 186 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-09-29T10:42:12+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0015s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined variable: module /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: var /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 991 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2015-09-29T10:42:15+08:00 ] 127.0.0.1 /index.php?m=&&m=Store&c=Goods&a=goodsList&classId=0&status=0&keywords=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined variable: module /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [8] Undefined variable: var /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 991 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 991 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-09-29T10:42:51+08:00 ] 127.0.0.1 /index.php?m=&&m=Store&c=Goods&a=goodsList&classId=1&status=2&keywords=as
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2015-09-29T10:51:30+08:00 ] 127.0.0.1 /index.php?m=&&m=Store&c=Goods&a=goodsList&classId=1&status=2&keywords=as
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0019s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.class_id = 1 AND gs.status = '1' AND gs.meta_keywords LIKE '%as%' AND gs.shop_code = '2139b23d014f8f03990c4f132d82457c'  [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2015-09-29T11:04:37+08:00 ] 127.0.0.1 /index.php?m=&&m=Store&c=Goods&a=goodsList&classId=1&status=2&keywords=as
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0014s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.class_id = 1 AND gs.status = '1' AND gs.meta_keywords LIKE '%as%' AND gs.shop_code = '2139b23d014f8f03990c4f132d82457c'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2015-09-29T11:04:52+08:00 ] 127.0.0.1 /index.php?&m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0009s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: status /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 194 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 195 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 196 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: status /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 194 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 195 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 196 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2015-09-29T11:04:58+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: status /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 194 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 195 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 196 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: status /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 194 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 195 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 196 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2015-09-29T11:05:46+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,gs.status,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 194 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 195 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 196 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 194 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 195 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 196 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2015-09-29T11:06:13+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,gs.status,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 194 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 195 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 196 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 184 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 193 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 194 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 195 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 196 行.
+NOTIC: [8] Undefined index: id /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2015-09-29T11:06:16+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=changeGoodsStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+
+[ 2015-09-29T11:16:33+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=changeGoodsStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+SQL: SELECT `is_hot`,`is_new`,`is_recommend`,`status` FROM `shop_goods` WHERE `id` = 0 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-09-29T11:16:34+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=changeGoodsStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT `is_hot`,`is_new`,`is_recommend`,`status` FROM `shop_goods` WHERE `id` = 0 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-09-29T11:16:36+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT gs.id,gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,gs.status,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-09-29T11:16:37+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=changeGoodsStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT `is_hot`,`is_new`,`is_recommend`,`status` FROM `shop_goods` WHERE `id` = 1 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `shop_goods` SET `status`='0' WHERE `id` = 1 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' [ RunTime:0.0041s ]
+
+[ 2015-09-29T11:16:50+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0009s ]
+SQL: SELECT gs.id,gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,gs.status,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2015-09-29T11:16:53+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=changeGoodsStatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT `is_hot`,`is_new`,`is_recommend`,`status` FROM `shop_goods` WHERE `id` = 2 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `shop_goods` SET `is_hot`='0' WHERE `id` = 2 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' [ RunTime:0.0009s ]
+
+[ 2015-09-29T11:16:55+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 122 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0009s ]
+SQL: SELECT gs.id,gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,gs.status,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2015-09-29T11:31:48+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 123 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0015s ]
+SQL: SELECT gs.id,gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,gs.status,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = '2139b23d014f8f03990c4f132d82457c' AND gs.status = '1'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2015-09-29T13:48:02+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsAdd&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 2 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 29 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000803s ]
+
+[ 2015-09-29T14:01:56+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsAdd&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 2 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 29 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2015-09-29T14:02:01+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsAdd&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 2 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 29 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2015-09-29T14:03:09+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsAdd&id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_goods` WHERE `id` = 2 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 29 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_delete` <> '0'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 22 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `class_id` = 23 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 127 行.
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/88cf3f6bd5dedcfc5399b5f0e6929699.php 第 212 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+

@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0 auto;
+	padding:0;
+	font-family:"微软雅黑";
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#42495e;
+}
+body {
+	display:block;
+}
+body,div,ul,li,table,h1,h2,h3,h4,h5,p {
+	border:0;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+body {
+	position:relative;
+	background:#efeff4;
+}
+a {
+	cursor:pointer;
+	text-decoration:none;
+	outline:none;
+}
+img,object { max-width: 100%;}
+img { -ms-interpolation-mode: bicubic; }
+#map {
+	width:100%;
+}
+/*头部内容*/
+header {
+	background:#02a0e7;
+	height:90px;
+}
+nav table td,footer ul li {
+	color:#fff;
+}
+nav table td,.but {
+	font-size:0.875em;
+}
+
+nav table td.p {
+	font-size:0.75em;
+	color:#fff;
+}
+nav table {
+	width:90%;
+}
+nav table {
+	margin:0 auto;
+	padding:10px 0;
+}
+nav table td.left_icon {
+	width:10%;
+	padding-top:5px;
+}
+.menu {
+	height:30px;
+}
+/*正文内容*/
+section table {
+	width:100%;
+	background:#fff;
+	border-bottom:#dfe5e8 1px solid;
+}
+section table td {
+	text-align:center;
+	height:59px;
+	width:50%;
+	padding:14px 0;
+}
+section dl {
+	width:86%;
+	padding-right:5%;
+	height:59px;
+}
+section dl dt,section dl dt dd {
+	line-height:29px;
+}
+section dl.aa {
+	margin-right:0;
+	border-right:#dfe5e8 1px solid;
+}
+section dl.bb {
+	margin-left:0;
+}
+section dl dd p,section dl dd p span {
+	color:#008ece;
+}
+section dl dd p span {
+	font-size:1.5em;
+}
+section dl dt {
+	font-size:0.75em;
+}
+.border_bottom {
+	height:87px;
+	margin-left:5%;
+	border-bottom:#dfe5e8 1px solid;
+}
+
+.border_bottom1 {
+	margin-left:0;
+	margin-right:5%;
+}
+.but {
+	width:48%;
+	background:#ff5466;
+	border-radius:5px;
+	color:#fff;
+	margin:0 auto;
+	height:35px;
+	line-height:35px;
+}

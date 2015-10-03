@@ -2,6 +2,23 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Controller/NewsController.class.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsBrandController.class.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Controller/ShopController.class.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Model/GoodsModel.class.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/View/Goods/goodsAdd.html</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Controller/IndexController.class.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Controller/BannerController.class.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Conf/config.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/View/Goods/goodsList.html</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/View/News/newsAdd.html</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Common/Common/function.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Controller/TemplateController.class.php</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/View/News/newsList.html</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/View/GoodsBrand/viewGoodsClass.html</file>
+            <file>file:/Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php</file>
+        </group>
     </open-files>
 </project-private>

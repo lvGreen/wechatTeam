@@ -1,0 +1,69 @@
+[ 2015-09-16T00:01:21+08:00 ] 127.0.0.1 /index.php?m=Store&c=GoodsBrand&a=addGoodsClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [2] include(Store\Service\UpimgService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\UpimgService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2015-09-16T00:08:52+08:00 ] 127.0.0.1 /index.php?m=Store&c=GoodsBrand&a=addGoodsClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [2] include(Store\Service\UpimgService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\UpimgService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0174s ]
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'add_time' doesn't have a default value
+
+[ 2015-09-16T00:09:27+08:00 ] 127.0.0.1 /index.php?m=Store&c=GoodsBrand&a=addGoodsClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+NOTIC: [2] include(Store\Service\UpimgService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\UpimgService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0163s ]
+SQL: INSERT INTO `shop_class` (`name`,`title`,`parent_id`,`index`,`is_delete`,`keywords`,`desc`,`ad_img`,`class_logo`,`shop_code`,`add_time`) VALUES ('分类1','阿姐换手机卡好','0','50','1','阿沙技术','阿健身卡','20150916/1442333367.png','20150916/1442333367.jpeg','2139b23d014f8f03990c4f132d82457c','20150916000927') [ RunTime:0.0233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-09-16T00:09:28+08:00 ] 127.0.0.1 /index.php?m=Store&c=GoodsBrand&a=viewGoodsClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001786s ]
+

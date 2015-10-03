@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0 auto;
+	padding:0;
+	font-family:"微软雅黑";
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#42495e;
+}
+body {
+	display:block;
+}
+body,div,ul,li,table,h1,h2,h3,h4,h5,p {
+	border:0;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+body {
+	position:relative;
+	background:#efeff4;
+}
+a {
+	cursor:pointer;
+	text-decoration:none;
+	outline:none;
+}
+img,object { max-width: 100%;}
+img { -ms-interpolation-mode: bicubic; }
+#map {
+	width:100%;
+}
+/*头部内容*/
+header {
+	text-align:center;
+	line-height:45px;
+	background:#02a0e7;
+	height:45px;
+	color:#fff;
+}
+/*正文内容*/
+section {
+	width:100%;
+	overflow:hidden;
+	background:#fff;
+	border-bottom:#dfe5e8 1px solid;
+	padding-bottom:10px;
+}
+section table {
+	width:95%;
+	margin:0 auto;
+}
+section table td {
+	padding-left:20px;
+	font-size:0.875em;
+}
+section table thead td {
+	color:#999;
+	height:30px;
+	line-height:30px;
+	border-bottom:#d0cfd4 1px solid;
+}
+section table tbody td {
+	height:40px;
+	line-height:40px;
+	border-bottom:#e1e0e5 1px solid;
+}
+section table span {
+	color:#fd0336;
+}
+/*底部内容*/
+footer {
+	position:relative;
+}
+footer ul {
+	position: fixed;
+	bottom:20px;
+	left:50%;
+	width:60%;
+	margin-left:-30%;
+}
+footer ul li {
+	color:#fff;
+	font-size:0.75em;
+	height:30px;
+	padding:0 10px;
+	line-height:30px;
+	text-align:center;
+	background:#02a0e7;
+	border-radius:50px;
+}

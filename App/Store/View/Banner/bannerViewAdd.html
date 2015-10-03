@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>绿叶软件科技 & blank_page</title>
+    <include file='Public:publicHeader' />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/global.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/order_remind.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/content.css" media="all" />
+</head>
+<body>
+<include file='Public:publicTop' />
+<section id="page">
+    <include file='Public:publicCat' />
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <include file='Public:publicNotice' />
+                    <!-- /PAGE HEADER -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- SIMPLE STRIPED -->
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <!-- BOX -->
+                                    <div class="box border blue">
+                                        <include file='Public:publicTitle' />
+                                        <!-- 右边内容-->											
+                                        <div id="mainss" class="main" style="height: 969px; padding-top: 1px;">
+                                            <div class="contentbox">
+                                                <form action="{:U('Store/Banner/addBanner')}" method="post" enctype="multipart/form-data" name="theForm" id="theForm">
+                                                    <div class="menu_content">
+                                                        <table cellspacing="2" cellpadding="5" width="100%" id="tab1">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="label">banner名称：</td>
+                                                                    <td>
+                                                                        <input name="banner_name" id="goods_name" type="text" size="43" value="" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">banner图片：</td>
+                                                                    <td>
+                                                                        <img src='' />
+                                                                        <input name="banner_pic" type="file" value="" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">banner排序：</td>
+                                                                    <td>
+                                                                        <input name="index" type="text" value="" />
+                                                                        <span>顺序越大，显示越靠前</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">操作：</td>
+                                                                    <td>
+                                                                        <input type='submit' name='提交保存' />
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
