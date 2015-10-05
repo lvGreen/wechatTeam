@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <include file='Public:header' />
+    <link href="__PUBLIC__/Home/Css/class.css" rel="stylesheet">
+    <script>
+        $(function () {
+            $("#list_nav li").click(function () {
+                $("#list_nav li a").removeClass("on");
+                $(this).find("a").addClass("on");
+                $(".list_ul").removeClass("on");
+                $(".list_ul:eq(" + $(this).attr("data-index") + ")").addClass("on");
+            });
+        });
+    </script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <div data-role="container" class="container classify2">
+        <section data-role="body" class="body">
+            <div data-role="widget" data-widget="classify_2" class="classify_2" ontouchmove="return false;" id="classify_2" style="min-height:120px;">
+                <!--组件部分 开始-->
+                <div class="widget_wrap box ofh">
+                    <div data-role="widget" data-widget="list_nav" class="list_nav">
+                        <div class="widget_wrap">
+                            <div id="scroller_nav" style="position: absolute;">
+                                <ul id="list_nav" class="list_nav">
+                                    <volist name='classList' id='item' key='k'>
+                                        <li data-index="{$k}">
+                                            <a href="javascript:void(0);" class="on">{$item.name}</a>
+                                        </li>
+                                    </volist>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-role="widget" data-widget="list_body" class="list_body">
+                        <div class="widget_wrap">
+                            <div id="scroller_body">
+                                <div>
+                                    <ul class="list_ul on" style="">
+                                    </ul>
+                                    <volist name='classList' id='item'>
+                                        <ul class="list_ul" style="">
+                                            <volist name='item.next' id='class'>
+                                                <li>
+                                                    <a href="{:U('Home/Goods/goodsList',array('type'=>'lastClass', 'classId'=>$class['id']))}">
+                                                        <div>
+                                                            <span>
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <label>{$class.name}</label>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </volist>
+                                        </ul>
+                                    </volist>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--组件部分 结束-->
+            </div>
+        </section>
+    </div>
+<include file='Public:footer' />
+</body>
+</html>

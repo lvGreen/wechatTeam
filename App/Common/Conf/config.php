@@ -9,5 +9,6 @@ return array(
     'SESSION_AUTO_START'=>true,
     'upload_file_max_size'=>1024*1024,
     'DOWN_TEMP' => APP_PATH.'Upload/downTemp/',
+    'adminUploadUrl'=>'http://127.0.0.1:8090/Upload/',
     'wechat'=>array('appID'=>'wx98f7c52db32b1160','appsecret'=>'3f85ccf23c7315cff4a4753980c6005a','token'=>'7bdaebbced1198f1a3eb4ef79f89f915'),
 );

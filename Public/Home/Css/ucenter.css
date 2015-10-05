@@ -10,7 +10,7 @@ html{
 	display: block;
 	padding:0 14px;
 	position:relative;
-	background:url(../images/w_13.jpg) no-repeat center center;
+	background:url(../Image/w_13.jpg) no-repeat center center;
 	-webkit-background-size:cover;
 }
 .header_section_1 a>div{
@@ -66,7 +66,7 @@ html{
 	padding:0 14px;
 	border: 1px solid #ced3d7;
 	border-width: 1px 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 	-webkit-box-shadow: 0 1px 1px rgba(100,100,100,0.1);
 }
 .header_section_2 ul{
@@ -86,7 +86,7 @@ html{
 	height:40px;
 	position: relative;
 	border-radius:100px;
-	background:url(../images/w_41.png) no-repeat center 5px #50c7f1;
+	background:url(../Image/w_41.png) no-repeat center 5px #50c7f1;
 	-webkit-background-size:30px auto;
 }
 .header_section_2 ul li:nth-of-type(2) span{
@@ -150,7 +150,7 @@ html{
 	margin:16px 0;
 	/*border: 1px solid #ced3d7;
 	border-width: 1px 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 	-webkit-box-shadow: 0 1px 1px rgba(100,100,100,0.1);*/
 }
 .list_ul li a{
@@ -182,7 +182,7 @@ html{
 /*.list_ul li a span{
 	display: inline-block;
 	width: 30px;
-	background: url(../images/w_42.png) no-repeat -6px 0px;
+	background: url(../Image/w_42.png) no-repeat -6px 0px;
 	-webkit-background-size: 30px auto;
 	height: 30px;
 	margin-top: 7px;
@@ -191,7 +191,7 @@ html{
 .list_ul li a span{
 	display: inline-block;
 	width: 30px;
-	background: url(../images/ml.png) no-repeat -6px 0px;
+	background: url(../Image/ml.png) no-repeat -6px 0px;
 	-webkit-background-size: 30px auto;
 	height: 30px;
 	margin-top: 7px;
@@ -294,7 +294,7 @@ html{
 	width:30px;
 	height:30px;
 	margin:7px 0;
-	background: url(../images/w_42.png) no-repeat center -420px;
+	background: url(../Image/w_42.png) no-repeat center -420px;
 	-webkit-background-size:30px auto;
 }
 .list_ul_modify_userName .btn_save{

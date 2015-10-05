@@ -93,6 +93,12 @@ class GoodsController extends BaseController {
             $this->error('商品描述不能为空！');
             exit;
         }
+        
+        $saveData['property'] = I('post.goods_proper');
+        if($saveData['property'] == ''){
+            $this->error('商品属性描述不能为空！');
+            exit;
+        }
         $saveData['meta_keywords'] = I('post.meta_keys');
         $saveData['meta_dis'] = I('post.meta_desc');
         $status = I('post.is_online');

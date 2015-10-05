@@ -7,7 +7,7 @@
 	background:#fff;
 	border:1px solid #ced3d7;
 	border-width:1px 0 0;
-	-webkit-border-image: url(../imgs/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 .myorder .orderlist.notopborder{ border-top:none;}
 .myorder .orderlist>span{
@@ -17,7 +17,7 @@
 	padding:0 12px;
 	border:1px solid #e8eaeb;
 	border-width:0 0 1px;
-	-webkit-border-image: url(../imgs/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 	color:#878a8d;
 }
 .myorder .orderlist>span >label{ display:block; float:right; color:#ff5366; font-size:14px;}
@@ -43,7 +43,7 @@
 	float:left;
 	border:1px solid #ced3d7;
 	border-width:0 0 1px;
-	-webkit-border-image: url(../imgs/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 
 .myorder .orderlist .orderStatus{
@@ -63,7 +63,7 @@ html{
 }
 .list_order:empty, .list_order.empty{
 	height: 300px;
-	background: url(../imgs/w_21.png) no-repeat center center;
+	background: url(../Image/w_21.png) no-repeat center center;
 	-webkit-background-size: 250px auto;
 }
 .list_order li.loading_element{

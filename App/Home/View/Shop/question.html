@@ -1,107 +1,55 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <include file='Public:header' />
-        <link href="__PUBLIC__/Home/Css/faq.css" rel="stylesheet">
-        <script type="text/javascript" src="__PUBLIC__/Home/Js/common.js"></script>
-    </head>
-    <body onselectstart="return true;" ondragstart="return false;">
-        <div data-role="container" class="container faq">
-            <div class="body">
-                <header data-role="header"></header>
-                <section data-role="body" class="body">
-                    <div>
-                        <ul id="list_ul" class="list_ul" ontouchstart="" onselectstart="return false;">
+    <include file='Public:header' />
+    <link href="__PUBLIC__/Home/Css/faq.css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/Home/Js/common.js"></script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <div data-role="container" class="container faq">
+        <div class="body">
+            <header data-role="header"></header>
+            <section data-role="body" class="body">
+                <div>
+                    <ul id="list_ul" class="list_ul" ontouchstart="" onselectstart="return false;">
+                        <volist name='newsList' id='item'>
                             <li class="question">
                                 <dl>
-                                    <dt id="article_1001">绿叶科技分销系统微信三级分销模式？</dt>
-                                    <dd>绿叶科技分销系统将传统直销模式与微信实现完美结合，创新出的一种全新的商业模式，打破传统的消费模式，让消费者消费的同时也能参与到商品的利润分配中。如下：绿叶科技分销系统将每件商品拿出30%销售利润，采用三级（一级15%、二级10%、三级5%）分化的返利政策，让消费者、经营者相互均受益。
-                                        1、您只需在绿叶科技分销系统商城里购买满99元商品，即可成为绿叶科技分销系统的微客（消费商也即东家），系统将自动生成您独立的个人链接ID及二维码图片； 
-                                        2、凡是通过您的链接ID或二维码成功关注绿叶科技分销系统并购买的会员，成为您的一级微客（假设A），系统直接回馈产品价格15%的“返佣”；
-                                        3、凡是通过您的一级微客A的链接ID或二维码成功关注并购买的会员，成为您的二级微客(假设B)的同时，您还将获得回馈产品价格10%的“返佣”；
-                                        4、凡是通过您二级微客B的链接ID或二维码成功关注绿叶科技分销系统并购买的会员，成为您的三级微客（假设C）的同时，您还将获得回馈产品价格5%的“返佣”。</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">什么是微客？</dt>
-                                    <dd>微客是绿叶科技分销系统对消费商的统称，也即东家。</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">如何成为微客？</dt>
-                                    <dd>只要在绿叶科技分销系统商城里消费满99元即可成为微客， </dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">如何推广赚钱？</dt>
-                                    <dd>成为微客后，系统自动生成您独立的推广二维码和链接ID（您在绿叶科技分销系统商商城里分享出去的任意个页面系统会自带您的ID），您只需把二维码或链接分享给你的好友，他们关注并下单后，系统会自动为您分配佣金，</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">什么是未分配佣金？</dt>
-                                    <dd>未分配佣金是您的下级会员已下单未支付的佣金，或下单已支付但未确认收货（7日后系统将自动确认收货）的订单佣金，</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">什么是已分配佣金？</dt>
-                                    <dd>就是你的下级会员支付已完成的订单佣金，（需收货人确认收货或7天系统自动确认收货）</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">佣金如何体现？</dt>
-                                    <dd>你可以在分销中心页“申请体现”提交体现信息，等待后台工作人员审核通过，T+3即可自动到账，</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">佣金体现有手续费吗？</dt>
-                                    <dd>您赚钱的佣金自动转入您的佣金额里面，并且体现不收取任何手续费，</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">绿叶科技分销系统支持换货吗？</dt>
-                                    <dd>绿叶科技分销系统暂不提供换货服务，若您觉得商品不合适或不喜欢，请直接申请退货，把商品寄回重新下单。</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">订单退货时效是多久？</dt>
-                                    <dd>自订单签收次日起7天内（以快递公司的送货单上的签收日期为准），自下单后15天内未做退货申请，订单自动变为交易成功，此时不能再提交退货申请，若无退货申请仍将商品寄回的订单，微客赚不受理，</dd>
-                                </dl>
-                            </li><li class="question">
-                                <dl>
-                                    <dt id="article_1001">出现哪些情形时，可以在订单签收次日起7天内申请无理由退货？</dt>
-                                    <dd>1、出现质量问题，2、商品及商品本身保持在绿叶科技分销系统出售时原装且不影响二次销售，</dd>
+                                    <dt id="article_1001">{$item.title}？</dt>
+                                    <dd>{$item.content}</dd>
                                 </dl>
                             </li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
+                        </volist>
+                    </ul>
+                </div>
+            </section>
         </div>
-        <script>
-            $(function () {
-                $(".question").click(function () {
-                    $(this).find("dd").toggle(function () {
-                        alert('a');
-                    }, function () {
+    </div>
+    <script>
+        $(function () {
+            $(".question").click(function () {
+                $(this).find("dd").toggle(function () {
+                    alert('a');
+                }, function () {
 
-                    });
                 });
             });
+        });
 
-            function onBridgeReady() {
-                WeixinJSBridge.call('showOptionMenu');
-            }
+        function onBridgeReady() {
+            WeixinJSBridge.call('showOptionMenu');
+        }
 
-            if (typeof WeixinJSBridge == "undefined") {
-                if (document.addEventListener) {
-                    document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-                } else if (document.attachEvent) {
-                    document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
-                    document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
-                }
-            } else {
-                onBridgeReady();
+        if (typeof WeixinJSBridge == "undefined") {
+            if (document.addEventListener) {
+                document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+            } else if (document.attachEvent) {
+                document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
             }
-        </script>
-    </body>
+        } else {
+            onBridgeReady();
+        }
+    </script>
+</body>
 </html>

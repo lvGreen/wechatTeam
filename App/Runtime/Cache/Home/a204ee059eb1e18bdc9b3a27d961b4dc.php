@@ -58,10 +58,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="freight">销量&nbsp;&nbsp;151件</p>
+                                <p class="freight">销量&nbsp;&nbsp;<?php echo ($goodsInfo["sold_count"]); ?>件</p>
                             </li>
                             <!--规格 start-->
-                            <input type="hidden" id="gid" value="15" />
+                            <input type="hidden" id="gid" value="<?php echo ($goodsInfo["goods_code"]); ?>" />
                             <input type="hidden" name="specifications" />
                             <li id="list_sku_number">
                                 <table id="table_number" class="table_number">
@@ -85,7 +85,9 @@
                                                 <textarea style="display:none" id="specifications"></textarea>
                                             </td>
                                             <td class="td_sku_inventory">
-                                                <label id="sku_inventory" class="sku_inventory">(剩余<font id="allCnt">88503</font>)</label>
+                                                <label id="sku_inventory" class="sku_inventory">(剩余
+                                                    <font id="allCnt"><?php if($goodsInfo["unless_count"] == '0' ): echo ($goodsInfo["count"]); else: ?>不限库存<?php endif; ?></font>)
+                                                </label>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -101,53 +103,20 @@
                             <div id="div_nav" class="div_nav">
                                 <ul class="box">
                                     <li data-idx="0">
-                                        <a href="javascript:;" class="">商品属性</a>
+                                        <a href="javascript:void(0);" class="">商品属性</a>
                                     </li>
                                     <li data-idx="1">
-                                        <a href="javascript:;" class="on">图文详情</a>
+                                        <a href="javascript:void(0);" class="on">图文详情</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div id="div_sections" class="div_sections">
                             <section class="section_specification">
-                                <dl>
-                                    <div>
-                                        <dd>
-                                            <label>产区</label><label>朗格多克</label>
-                                        </dd>
-                                        <dd>
-                                            <label>级别</label><label>AOP</label>
-                                        </dd>
-                                        <dd>
-                                            <label>年份</label><label>2013年</label>
-                                        </dd>
-                                        <dd>
-                                            <label>产地</label><label>法国</label>
-                                        </dd> 
-                                    </div>
-                                </dl>
+                                <?php echo ($goodsInfo["property"]); ?>
                             </section>
                             <section class="section_detail on" data-role="widget" data-widget="img_prev_view">
-                                <!-- 商品详情 -->
-                                <p>
-                                    <img src="./photos/20150717161626_16505.jpg" width="100%" height="40%" alt=""> 
-                                </p>
-                                <p style="text-align:center;">
-                                    <img src="./photos/20150717161626_16505.jpg" width="100%" height="40%" alt=""> 
-                                </p>
-                                <p>
-                                    <img src="./photos/20150717161626_16505.jpg" width="100%" height="40%" alt=""> 
-                                </p>
-                                <p>
-                                    <img src="./photos/20150717161626_16505.jpg" width="100%" height="40%" alt=""> 
-                                </p>
-                                <p>
-                                    <img src="./photos/20150717161626_16505.jpg" width="100%" height="40%" alt="">
-                                </p>
-                                <p>
-                                    <img src="./photos/20150717161626_16505.jpg" width="100%" height="40%" alt="">  
-                                </p>                        
+                                <?php echo ($goodsInfo["content"]); ?>
                             </section>
                         </div>
                     </div>
@@ -173,23 +142,23 @@
             </div>
         </div>
     </div>
-    <?php if($goods != '' ): ?><div data-role="widget" data-widget="">
+    <?php if($goods == 'goods' ): ?><div data-role="widget" data-widget="">
             <div class="widget_wrap">
                 <ul class="fixed_btn">
                     <ol id="fixed_btn" class="tbox" style="position: fixed;">
                         <li id="headerShopTu">
                             <div style="width: 45px">
-                                <a href="buycar.html" id="btn_link_shopcart" class="btn_add btn_add_shopcart" data-count="1">&nbsp;</a>
+                                <a href="<?php echo U('Home/Order/buyCar');?>" id="btn_link_shopcart" class="btn_add btn_add_shopcart" data-count="<?php echo ($carCount); ?>">&nbsp;</a>
                             </div>
                         </li>
                         <li>
                             <div class="box">
                                 <div>
-                                    <a href="javascript:;" id="btn_add_shopcart" class="btn on">
+                                    <a href="javascript:void(0);" id="btn_add_shopcart" class="btn on">
                                         <label>加入购物车</label></a>
                                 </div>
                                 <div>
-                                    <a href="ordersubmit.html" id="btn_buy" class="btn red on">
+                                    <a href="javascript:void(0)" id="btn_buy" class="btn red on">
                                         <label>立刻购买</label></a>
                                 </div>
                             </div>
@@ -198,8 +167,55 @@
                 </ul>
             </div>
         </div><?php endif; ?>
+    <?php if($buyCar == 'buyCar' ): ?><div data-role="widget" data-widget="footer_sub_btn" class="footer_sub_btn">
+            <div class="widget_wrap hidden" style="display:inherit;">
+                <ul>
+                    <ol class="tbox activity" style="visibility:hidden;">
+                        <dd>
+                            <label class="ng-binding">您可以参加活动</label> 
+                        </dd>
+                        <dd>
+                            <label ng-show="activity.price_youhui" class="ng-binding ng-hide">已减 - ￥NaN</label>
+                        </dd>
+                    </ol>
+                    <ol class="tbox">
+                        <li>
+                            <div class="price_des" id="price_des">
+                                <p>总计<span class="price_total ng-binding">￥0.00</span></p>
+                                <p class="ng-binding">(共<font class="cnt_total" style="color:#ff5366">0</font>件，不含运费)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn red" id="btn_buy">去结算</a>
+                        </li>
+                    </ol>
+                </ul>
+            </div>
+        </div><?php endif; ?>
+    <?php if($addr == 'addr' ): ?><div class="div_section_btn footer_div_section_btn">
+            <div class="widget_wrap">
+                <ul>
+                    <li style="margin-bottom:20px">
+                        <a href="addAddr.html" class="btn red" id="btn_addAddress" style="color:#FFFFFF">新增收货地址</a>
+                    </li>
+<!--                    <li>
+                        <a href="javascript:;" onclick="getaddr();" class="btn red" id="btn_addAddress" style="color:#FFFFFF">使用微信收货地址</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div><?php endif; ?>
 </footer>
         </div>
-        
+        <div data-widget="tools" data-tools="tools_widget" id="tools_widget" class="tools_widget">
+    <div class="widget_wrap">
+        <ul class="tools_widget_wrap">
+            <li><a href="javascript:;" id="tools_widget_goTop" class="tools_widget_goTop hidden" style="display: block;">
+                    顶部</a> </li>
+            <li id="tools_kfli" style=" display:none;">
+                <a href="#" id="tolls_widget_message" class="tolls_widget_message">客服</a> 
+            </li>
+        </ul>
+    </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <include file='Public:header' />
+    <link href="__PUBLIC__/Home/Css/addressEdit.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Home/Css/layer.css" id="layui_layer_skinlayercss">
+
+    <script src="__PUBLIC__/Home/Js/region.js"></script>
+    <script src="__PUBLIC__/Home/Js/layer.js"></script>
+    <script src="__PUBLIC__/Home/Js/jquery.form.js"></script>
+    <script src="__PUBLIC__/Home/Js/address_edit.js"></script>
+    <script src="__PUBLIC__/Home/Js/hide.js"></script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <div data-role="container" class="container my_addressEdit">
+        <section data-role="body" class="body">
+            <div class="div_section">
+                <form id="form_list_address">
+                    <ul id="list_address_edit" class="list_address_edit">
+                        <input type="hidden" name="id" value="{$addrDetail.id}">
+                        <input type="hidden" name="type" value="{$type}">
+                        <li>
+                            <div>
+                                <input type="text" maxlength="50" id="name" name="name" value="{$addrDetail.receive_name}" placeholder="姓名">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="text" id="tel" name="tel" value="{$addrDetail.phone}" placeholder="电话" maxlength="20">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="address_select">
+                                <select name="province" placeholder="省份">
+                                    <if condition="$addrDetail['privince'] eq '' ">
+                                        <option value="北京市">北京市</option>
+                                    <else />
+                                        <option value="{$addrDetail['privince']}">{$addrDetail['privince']}</option>
+                                    </if>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="address_select">
+                                <select name="city" placeholder="城市">
+                                    <if condition="$addrDetail['city'] eq ''">
+                                        <option value="市辖区">市辖区</option>
+                                        <option value="市辖县">市辖县</option>
+                                    <else />
+                                        <option value="{$addrDetail.city}">{$addrDetail.city}</option>
+                                    </if>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="address_select">
+                                <select name="area" placeholder="区县">
+                                    <if condition="$addrDetail['town'] eq ''">
+                                        <option value="东城区">东城区</option>
+                                    <else />
+                                        <option value="{$addrDetail.town}">{$addrDetail.town}</option>
+                                    </if>
+                                </select>
+                            </div>
+                            <script type="text/javascript">
+                                new PCAS('province', 'city', 'area', '', '', '');
+                            </script>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="text" id="address" name="address" value="{$addrDetail.address}" placeholder="详细地址" maxlength="50">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="div_section_btn">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" class="btn red" id="btn_save_address">保存</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="history.back();" class="btn btn_cancel" id="btn_cancel_address">取消</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <include file='Public:footerIndex' />
+    </div>
+<include file='Public:footer' />
+</body>
+</html>

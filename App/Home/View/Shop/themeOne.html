@@ -61,7 +61,7 @@
                     <ul>
                         <volist name='item.goods' id='goodsInfo'>
                         <li>
-                            <a href="{:U('Home/Goods/goodsDetail', array('goodsCode'=>$goodsInfo['goods_code']))}">
+                            <a href="{:U('Home/Goods/goodsDetail', array('code'=>$goodsInfo['goods_code']))}">
                                 <div>
                                     <img src="{:getUploadUrl($goodsInfo.img)}">
                                 </div>

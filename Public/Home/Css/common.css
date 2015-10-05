@@ -280,7 +280,7 @@ a{
 	text-align: center;
 	border:1px solid #ebecf1;
 	border-width:1px 0 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 .copyright1 .tbox>*{
 	vertical-align: middle;
@@ -339,7 +339,7 @@ body.closescroll{ overflow:hidden}
 	width:44px;
 	height:44px;
 	line-height:63px;
-	background: url(../images/w_7.png) no-repeat center -1005px;
+	background: url(../Image/w_7.png) no-repeat center -1005px;
 	-webkit-background-size: 40px auto;
 	font-size:10px;
 	color:#ffffff;
@@ -432,7 +432,7 @@ div[data-role="widget"].otip .widget_body{
 	border-radius: 24px;
 	-webkit-animation: widget_gif 1s infinite linear;
 	/* clip: rect(0 auto 12px 0); */
-	background: url(../images/loading.png) no-repeat center center;
+	background: url(../Image/loading.png) no-repeat center center;
 	-webkit-background-size: 100%;
 }
 
@@ -483,7 +483,7 @@ div[data-role="widget"].otip .widget_body{
 .dialog_guid a.close{
 	margin:0;
 	width:25px;
-	background: url(../images/w_7.png) no-repeat center -513px;
+	background: url(../Image/w_7.png) no-repeat center -513px;
 	-webkit-background-size: 50px auto;
 }
 .dialog_guid .img_wrap{
@@ -527,7 +527,7 @@ div[data-role="widget"].otip .widget_body{
 	position: absolute;
 	left: 0;
 	top: -18px;
-	background:url(../images/w_44.png) no-repeat center 0;
+	background:url(../Image/w_44.png) no-repeat center 0;
 	background-size:60px auto;
 }*/
 
@@ -537,7 +537,7 @@ div[data-role="widget"].otip .widget_body{
 .dialog_guid_share ul{
 	height:60px;
 	padding: 0 50px 0 10px;
-	background-image:url(../images/w_44.png);
+	background-image:url(../Image/w_44.png);
 	background-repeat: no-repeat;
 	background-position: right -60px;
 	background-size:60px auto;

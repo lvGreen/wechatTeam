@@ -56,7 +56,7 @@ function http_curl($url, $data = '', $type = 'get') {
  */
 function check_str($content,$rule){
     $result = array();
-    switch($type['strtype']){
+    switch($rule['strtype']){
         case 'mobile':
             if(preg_match("/^1[34578][0-9]{9}$/",$content)){
                 return TRUE;

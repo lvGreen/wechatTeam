@@ -49,6 +49,7 @@ class BannerController extends BaseController {
         $saveData = array();
         $saveData['banner_img'] = $imgUrl;
         $saveData['title'] = I('post.banner_name');
+        $saveData['url'] = I('post.banner_url');
         $saveData['index'] = (int) I('post.index');
         $saveData['shop_code'] = $_SESSION['unique_code'];
         $saveData['status'] = '1';

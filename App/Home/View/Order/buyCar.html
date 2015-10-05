@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="WmallAPP" class="ng-scope">
+    <head>
+        <include file='Public:header' />
+        <link href="__PUBLIC__/Home/Css/shopcart.css" rel="stylesheet">
+        <script src="__PUBLIC__/Home/Js/layer.js"></script>
+        <link rel="stylesheet" href="__PUBLIC__/Home/Css/layer.css" id="layui_layer_skinlayercss">
+        <script src="__PUBLIC__/Home/Js/car.js"></script>
+        <script src="__PUBLIC__/Home/Js/hide.js"></script>
+
+    </head>
+    <body onselectstart="return true;" ondragstart="return false;" ng-controller="shopcart_Controller" class="ng-scope">
+        <div data-role="container" class="container shopcart">
+            <section data-role="body" class="body" style="min-height: 497px;">
+                <div class="section_goods _goods ">
+                    <form id="form_shopcart_list" method="post" class="ng-pristine ng-valid">
+                        <div class="shopcart_list_header ng-scope" style="position:fixed; top:0; left:0; background-color:#CCCCCC; z-index:99">
+                            <li class="tbox">
+                                <div class="selAll">
+                                    <span class="input_wrap">
+                                        <div id="checkAll" class="radio " ng-checked=""></div>
+                                    </span>
+                                </div>
+                                <div style="width:100%;">
+                                    <label>全选</label>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0);" class="icon_del" id="delGoods">&nbsp;</a>
+                                </div>
+                            </li>
+                        </div>
+                        <ul id="shopcart_list_body" class="shopcart_list_body list_goods" style="margin-top:45px">
+                            <volist name='carList' id='item'>
+                            <li class="ng-scope">
+                                <div class="tbox">
+                                    <div class="ng-scope one_data">
+                                        <span>
+                                            <div ng-checked="" name="goods_id" value="{$item.id}" class="radio"></div>
+                                            <input type="checkbox" style="display:none;" name="car[]" value="{$item.id}">
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <span class="img_wrap">
+                                                <img src="{:getUploadUrl($item['small_img'])}" />
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <p class="title ng-binding"><a href="{:U('Home/Goods/goodsDetail',array('code'=>$item['goods_code']))}">{$item.title}</a></p>
+                                        <p class="price ng-binding">￥ {$item.price}</p>
+                                        <p class="ng-binding"></p>
+                                        <dl class="ng-scope">
+                                            <dd>
+                                                <a href="javascript:;" class="reduce">&nbsp;</a>
+                                            </dd>
+                                            <dd>
+                                                <input type="text" name="sum" value="{$item.count}" readonly="true">
+                                            </dd>
+                                            <dd>
+                                                <a href="javascript:;" class="plus">&nbsp;</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </li>
+                            </volist>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+            <include file='Public:footerIndex' />
+        </div>
+        <include file='Public:footer' />
+    </body>
+        </html>

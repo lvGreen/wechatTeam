@@ -148,6 +148,12 @@
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
+                                                                    <td class="label">banner跳转链接：</td>
+                                                                    <td>
+                                                                        <input name="banner_url" id="goods_name" type="text" value="" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
                                                                     <td class="label">banner图片：</td>
                                                                     <td>
                                                                         <img src='' />

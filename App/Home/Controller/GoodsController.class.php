@@ -13,9 +13,10 @@ class GoodsController extends BaseController {
      */
     public function goodsList(){
         $type = I('get.type');
+        $classId = I('get.classId');
+        $goodsCondition = array();
         switch ($type){
             case 'class':
-                $classId = I('get.classId');
                 $classCondition = array();
                 $classCondition['shop_code'] = $_SESSION['wapShop'];
                 $classCondition['is_delete'] = '1';
@@ -25,16 +26,18 @@ class GoodsController extends BaseController {
                 foreach($classArray as $val){
                     $str .= ','.$val['id'];
                 }
-                
-                $goodsCondition = array();
-                $goodsCondition['shop_code'] = $_SESSION['wapShop'];
                 $goodsCondition['class_id'] = array('in', $str);
-                $goodsCondition['status'] = '1';
-                
-                $goodsArray = M('Goods')->where($goodsCondition)->field('goods_code, title, price, img, small_img')->select();
-                $this->assign('goodsInfo', $goodsArray);
                break;
+            case 'lastClass':
+                $goodsCondition['class_id'] = $classId;
+                break;
         }
+        
+        $goodsCondition['shop_code'] = $_SESSION['wapShop'];
+        $goodsCondition['status'] = '1';
+
+        $goodsArray = M('Goods')->where($goodsCondition)->field('goods_code, title, price, img, small_img')->select();
+        $this->assign('goodsInfo', $goodsArray);
         $this->display();
     }
     
@@ -48,16 +51,36 @@ class GoodsController extends BaseController {
         $goodsCondition['status'] = '1';
         $goodsInfo = M('Goods')->where($goodsCondition)->find();
         $this->assign('goodsInfo', $goodsInfo);
-        $soldCountCondition = array();
-        $soldCountCondition['goods_code'] = $goodsCode;
-        $soldCountCondition['status'] = '3';
-        $soldCount = M('Order')->where($soldCountCondition)->count();
-        $this->assign('soldCount', $soldCount);
-        print_r($goodsInfo);
-        print_r($soldCount);
+        
+        $carCondition = array();
+        $carCondition['open_id'] = $_SESSION['openid'];
+        $carCondition['status'] = '1';
+        $carCount = M('Car')->where($carCondition)->count();
+        $this->assign('carCount', $carCount);
         
         $this->assign('goods','goods');
         $this->display();
     }
-
+    
+    /**
+     * 分类列表
+     */
+    public function goodsClass(){
+        $classCondition = array();
+        $classCondition['shop_code'] = $_SESSION['wapShop'];
+        $classCondition['type'] = '1';
+        $classCondition['is_delete'] = '1';
+        
+        $classInfo = M('Class')->where($classCondition)->field('name, id, parent_id')->select();
+        foreach ($classInfo as $val){
+            if($val['parent_id'] == '0'){
+                $result[$val['id']] = $val;
+            }else{
+                $result[$val['parent_id']]['next'][] = $val;
+            }
+        }
+        
+        $this->assign('classList', $result);
+        $this->display();
+    }
 }

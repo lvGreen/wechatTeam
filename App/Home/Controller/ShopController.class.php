@@ -29,8 +29,6 @@ class ShopController extends BaseController {
                 $shopService = D('Shop', 'Service');
                 $classInfo = $shopService->getClass('classAndGoods');
                 $this->assign('classInfo' , $classInfo);
-                print_r($_SESSION);
-                print_r($classInfo);
                 $this->display('themeOne');
                 break;
             case '2':
@@ -49,13 +47,29 @@ class ShopController extends BaseController {
      * 关于页面
      */
     public function about(){
-        
+        $introduction = M('User su')
+            ->join('shop_company sc ON sc.user_id = su.id')
+            ->where(array('su.unique_code'=>$_SESSION['wapShop']))
+            ->field('sc.introduction')
+            ->find();
+        $this->assign('introduction', $introduction['introduction']);
+        $this->display();
     }
 
     /**
      * 通知，新闻页
      */
     public function question(){
+        $newsCondition = array();
+        $newsCondition['status'] = '1';
+        $newsCondition['shop_code'] = $_SESSION['wapShop'];
         
+        $newsList = M('News')
+                ->field('title, content')
+                ->where($newsCondition)
+                ->order('`index` DESC')
+                ->select();
+        $this->assign('newsList', $newsList);
+        $this->display();
     }
 }

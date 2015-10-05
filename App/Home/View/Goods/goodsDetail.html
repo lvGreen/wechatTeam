@@ -43,10 +43,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="freight">销量&nbsp;&nbsp;{$soldCount}件</p>
+                                <p class="freight">销量&nbsp;&nbsp;{$goodsInfo.sold_count}件</p>
                             </li>
                             <!--规格 start-->
-                            <input type="hidden" id="gid" value="15" />
+                            <input type="hidden" id="gid" value="{$goodsInfo.goods_code}" />
                             <input type="hidden" name="specifications" />
                             <li id="list_sku_number">
                                 <table id="table_number" class="table_number">
@@ -88,10 +88,10 @@
                             <div id="div_nav" class="div_nav">
                                 <ul class="box">
                                     <li data-idx="0">
-                                        <a href="javascript:;" class="">商品属性</a>
+                                        <a href="javascript:void(0);" class="">商品属性</a>
                                     </li>
                                     <li data-idx="1">
-                                        <a href="javascript:;" class="on">图文详情</a>
+                                        <a href="javascript:void(0);" class="on">图文详情</a>
                                     </li>
                                 </ul>
                             </div>
@@ -110,6 +110,6 @@
             </section>
             <include file='Public:footerIndex' />
         </div>
-        <include fiel='Public:footer' />
+        <include file='Public:footer' />
 </body>
 </html>

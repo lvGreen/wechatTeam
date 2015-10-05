@@ -20,7 +20,7 @@ html{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background: url(../images/w_7.png#1) no-repeat center -452px;
+	background: url(../Image/w_7.png#1) no-repeat center -452px;
 	-webkit-background-size: 37px auto;
 	margin:25px 10px;
 }
@@ -60,7 +60,7 @@ html{
 .section_detail>div>*{
 	border: 1px solid #ced3d7;
 	border-width: 1px 0 0 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 .section_detail>div>*:first-child{
 	border-bottom: 0;
@@ -72,7 +72,7 @@ html{
 .redpackage_wrapper>*:nth-of-type(n+1){
 	border: 1px solid #ced3d7;
 	border-width: 1px 0 0 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 
 /********************************/
@@ -90,7 +90,7 @@ html{
 .list_goods li:nth-of-type(n+2){
 	border: 1px solid #ced3d7;
 	border-width:1px 0 0 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 .list_goods a{
 	display: block;
@@ -151,7 +151,7 @@ html{
 .confirm_transport .widget_body ul li:nth-last-of-type(n+2){
 	border: 1px solid #d2d2d2;
 	border-width:0 0 1px;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 .confirm_transport .widget_body ul label{
 	font-size:16px;
@@ -181,7 +181,7 @@ html{
 .list_transport li:not(:last-of-type), .list_coupon li:not(:last-of-type), .list_activity li:not(:last-of-type){
 	border: 1px solid #ced3d7;
 	border-width: 0 0 1px 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 .list_transport label, .list_coupon label, .list_activity label{
 	color:#a1a1a1;
@@ -244,7 +244,7 @@ html{
 .pay_list li:not(:last-of-type){
 	border: 1px solid #ced3d7;
 	border-width: 0 0 1px 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 }
 .pay_list:not(.on) li:nth-of-type(n+2){display:none;}
 .pay_list.on ol.show_all{display: none;}
@@ -273,7 +273,7 @@ html{
 	width:50px;
 	height:50px;
 	margin:0 10px;
-	background:url(../images/w_11.png) no-repeat center 0;
+	background:url(../Image/w_11.png) no-repeat center 0;
 	-webkit-background-size:50px auto;
 }
 .pay_list span.pay_pay_weipay{background-position: center 0px;}
@@ -422,7 +422,7 @@ html{
 	display: inline-block;
 	width: 23px;
 	height: 24px;
-	background: url(../images/w_7.png#1) no-repeat -7px -515px;
+	background: url(../Image/w_7.png#1) no-repeat -7px -515px;
 	-webkit-background-size: 39px auto;
 	/*background-color:orange;*/
 }
@@ -558,7 +558,7 @@ html{
 .activity_ads{
 	border: 1px solid #ced3d7;
 	border-width: 1px 0 0 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 	line-height:inherit!important;
 	padding:10px 0;
 }

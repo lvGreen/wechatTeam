@@ -72,7 +72,7 @@
                 <div class="widget_wrap">
                     <ul>
                         <?php if(is_array($item["goods"])): $i = 0; $__LIST__ = $item["goods"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$goodsInfo): $mod = ($i % 2 );++$i;?><li>
-                            <a href="<?php echo U('Home/Goods/goodsDetail', array('goodsCode'=>$goodsInfo['goods_code']));?>">
+                            <a href="<?php echo U('Home/Goods/goodsDetail', array('code'=>$goodsInfo['goods_code']));?>">
                                 <div>
                                     <img src="<?php echo getUploadUrl($goodsInfo.img);?>">
                                 </div>
@@ -105,28 +105,65 @@
             </div>
         </div>
     </div>
-    <?php if($goods != '' ): ?><div data-role="widget" data-widget="">
+    <?php if($goods == 'goods' ): ?><div data-role="widget" data-widget="">
             <div class="widget_wrap">
                 <ul class="fixed_btn">
                     <ol id="fixed_btn" class="tbox" style="position: fixed;">
                         <li id="headerShopTu">
                             <div style="width: 45px">
-                                <a href="buycar.html" id="btn_link_shopcart" class="btn_add btn_add_shopcart" data-count="1">&nbsp;</a>
+                                <a href="<?php echo U('Home/Order/buyCar');?>" id="btn_link_shopcart" class="btn_add btn_add_shopcart" data-count="<?php echo ($carCount); ?>">&nbsp;</a>
                             </div>
                         </li>
                         <li>
                             <div class="box">
                                 <div>
-                                    <a href="javascript:;" id="btn_add_shopcart" class="btn on">
+                                    <a href="javascript:void(0);" id="btn_add_shopcart" class="btn on">
                                         <label>加入购物车</label></a>
                                 </div>
                                 <div>
-                                    <a href="ordersubmit.html" id="btn_buy" class="btn red on">
+                                    <a href="javascript:void(0)" id="btn_buy" class="btn red on">
                                         <label>立刻购买</label></a>
                                 </div>
                             </div>
                         </li>
                     </ol>
+                </ul>
+            </div>
+        </div><?php endif; ?>
+    <?php if($buyCar == 'buyCar' ): ?><div data-role="widget" data-widget="footer_sub_btn" class="footer_sub_btn">
+            <div class="widget_wrap hidden" style="display:inherit;">
+                <ul>
+                    <ol class="tbox activity" style="visibility:hidden;">
+                        <dd>
+                            <label class="ng-binding">您可以参加活动</label> 
+                        </dd>
+                        <dd>
+                            <label ng-show="activity.price_youhui" class="ng-binding ng-hide">已减 - ￥NaN</label>
+                        </dd>
+                    </ol>
+                    <ol class="tbox">
+                        <li>
+                            <div class="price_des" id="price_des">
+                                <p>总计<span class="price_total ng-binding">￥0.00</span></p>
+                                <p class="ng-binding">(共<font class="cnt_total" style="color:#ff5366">0</font>件，不含运费)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="btn red" id="btn_buy">去结算</a>
+                        </li>
+                    </ol>
+                </ul>
+            </div>
+        </div><?php endif; ?>
+    <?php if($addr == 'addr' ): ?><div class="div_section_btn footer_div_section_btn">
+            <div class="widget_wrap">
+                <ul>
+                    <li style="margin-bottom:20px">
+                        <a href="addAddr.html" class="btn red" id="btn_addAddress" style="color:#FFFFFF">新增收货地址</a>
+                    </li>
+<!--                    <li>
+                        <a href="javascript:;" onclick="getaddr();" class="btn red" id="btn_addAddress" style="color:#FFFFFF">使用微信收货地址</a>
+                    </li>-->
                 </ul>
             </div>
         </div><?php endif; ?>
@@ -144,28 +181,28 @@
             </li>
 
             <li>
-                <a href="" data-fx="Modulefx">
+                <a href="<?php echo U('Home/Goods/goodsClass');?>" data-fx="Modulefx">
                     <span class="wicon-mark">&nbsp;</span>
                     <p>分类</p>
                 </a>
             </li>
 
             <li class="li3">
-                <a href="" data-fx="Modulefx">
+                <a href="<?php echo U('Home/PersonalCenter/index');?>" data-fx="Modulefx">
                     <span class="wicon-info">&nbsp;</span>
                     <p>分销中心</p>
                 </a>
             </li>
 
             <li>
-                <a href="" data-fx="Modulefx">
+                <a href="<?php echo U('Home/Order/orderList');?>" data-fx="Modulefx">
                     <span class="wicon-file">&nbsp;</span>
                     <p>我的订单</p>
                 </a>
             </li>
 
             <li>
-                <a href="" data-fx="Modulefx">
+                <a href="<?php echo U('Home/Order/buyCar');?>" data-fx="Modulefx">
                     <span class="wicon-cart">&nbsp;</span>
                     <p>购物车</p>
                 </a>

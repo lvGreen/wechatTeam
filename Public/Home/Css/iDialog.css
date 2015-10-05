@@ -42,7 +42,7 @@
 	text-align: center;
 	border-top:1px solid #7f8c8d;
 	border-width: 1px 0 0 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 	display: table;
 	width:100%;
 }
@@ -50,7 +50,7 @@
 	display: table-cell;
 	border-top: 1px solid #7f8c8d;
 	border-width: 0 1px 0 0;
-	-webkit-border-image: url(../images/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 	width: 50%;
 }
 *[data-widget^="widget_"] .widget_footer ul li:last-of-type{

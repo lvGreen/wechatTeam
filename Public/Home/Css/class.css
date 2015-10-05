@@ -18,7 +18,7 @@ body{
 	background:#ffffff;
 	border: 1px solid #ced3d7;
 	border-width: 0 0 0 1px;
-	-webkit-border-image: url(../imgs/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 	-webkit-box-flex: 1;
 }
 
@@ -31,7 +31,7 @@ body{
 	text-indent: 15px;
 	border:1px solid #ced3d7;
 	border-width: 0px 0px 1px 0px;
-	-webkit-border-image: url(../imgs/border.gif) 2 stretch;
+	-webkit-border-image: url(../Image/border.gif) 2 stretch;
 	position: relative;
 	overflow:hidden;
 	white-space: nowrap;

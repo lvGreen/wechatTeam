@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <include file='Public:header' />
+    <link href="__PUBLIC__/Home/Css/order.css" rel="stylesheet">
+    <script src="__PUBLIC__/Home/Js/common.js"></script>
+    <script src="__PUBLIC__/Home/Js/jquery.form.js"></script>
+    <script src="__PUBLIC__/Home/Js/order_write.js"></script>
+    <script src="__PUBLIC__/Home/Js/layer.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/Home/Css/layer.css" id="layui_layer_skinlayercss">
+    <script src="__PUBLIC__/Home/Js/hide.js"></script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <div data-role="container" class="container ordercreate2">
+        <header data-role="header"></header>
+        <section data-role="body" class="body" style="min-height: 591px;">
+            <form id="form1">
+                <if condition="$addrInfo neq '' ">
+                    <input type="hidden" id="addr_id" name='addr_id' value="{$addrInfo.id}">
+                    <div class="section_address">
+                        <div id="wrap_address">
+                            <a href="{$addrUrl}" class="tbox arrow" name="addressedit">                            
+                                <div><span class="icon_wrap icon_address">&nbsp;</span></div>                            
+                                <div class="show_address">    
+                                    <p>
+                                        <span>
+                                            <label>收货人：</label>{$addrInfo.receive_name}
+                                        </span>
+                                        <span class="fr">{$addrInfo.phone}</span>
+                                    </p>
+                                    <p>{$addrInfo.privince} {$addrInfo.city} {$addrInfo.town} {$addrInfo.address}</p>
+                                </div>                        
+                            </a>
+                        </div>
+                    </div>
+                    <else />
+                    <div class="section_address">
+                        <div id="wrap_address">
+                            <a href="{$addrUrl}" class="tbox arrow">                            
+                                <div><span class="icon_wrap icon_address">&nbsp;</span></div>                            
+                                <div class="show_address">    
+                                    <p><span><label>添加收货地址</label></span></p>
+                                </div>                        
+                            </a>
+                        </div>
+                    </div>
+                </if>
+                <div class="section_detail">
+                    <div>
+                        <header>
+                            <p>
+                                <label class="h8">购物清单</label>
+                                <label class="label_amount_goods fr">共<font class="allCnt">1</font>件   ￥<font class="allPrice">468.00</font></label>
+                            </p>
+                        </header>
+                        <ul class="list_goods">
+                            <volist name='goodsInfo' id='item'>
+                                <li>
+                                    <a href="javascript:void(0);" class="tbox">
+                                        <div>
+                                            <span class="img_wrap">
+                                                <img src="{:getUploadUrl($item['small_img'])}" />
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <p class="title">{$item.title}</p>
+                                            <p class="price">
+                                                ￥<font class="onePrice">{$item.price}</font>&nbsp;*&nbsp;<font class="count">{$item.count}</font></p>
+                                            <p class=""></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </volist>
+                        </ul>
+                        <header class="header_transport">
+                            <a href="javascript:void(0);">
+                                <label class="h8">运送方式</label>
+                                <label class="fr">运费    ￥<font class="freight">0.00</font></label>
+                            </a>
+                        </header>
+                        <!--促销活动-->
+                        <div class="mark_msg">
+                            <input type="text" name="remark" placeholder="备注" maxlength="200" />
+                        </div>
+                        <ul id="pay_list" class="pay_list on">
+                            <li>
+                                <label class="tbox">
+                                    <div>
+                                        <span class="pay_weipay">&nbsp;</span>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            微信支付
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <input type="hidden" name="paytype" value="0" rel="wechat" class="radio" checked="" />
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div id="order_submit_1" class="section_price_and_pay align_center order_submit_1">
+                        <p>总共支付   <span class="label_amount_total">￥<font class="allPrice0">468.00</font></span></p>
+                        <p class="p_delivery_fee">（含运费￥<font class="freight0">0.00</font>）</p>
+                        <p>
+                            <span>
+                                <a href="javascript:void(0);" class="btn red createOrder">订单支付</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <input type='hidden' name='orderType' value='{$type}' />
+                <if condition="$type eq 'goods' ">
+                    <input type='hidden' name='goodsCode' value='{$goodsInfo.0.goods_code}' />
+                    <input type='hidden' name='goodsCount' value='{$goodsInfo.0.count}' />
+                </if>
+            </form>
+        </section>
+        <include file='Public:footerIndex' />
+        <include file='Public:footer' />
+    </div>
+</body>
+</html>

@@ -9,6 +9,7 @@ class PersonalCenterController extends BaseController {
     }
     
     public function index(){
-        
+        print_r($_SESSION);
+        $this->display();
     }
 }

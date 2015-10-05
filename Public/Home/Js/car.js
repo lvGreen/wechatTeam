@@ -96,13 +96,16 @@ $(function(){
 	$("#btn_buy").click(function() {
 		var $_id = "";
 		$("#shopcart_list_body li input[type='checkbox'][name='car[]']:checked").each(function(){	
-			$_id += ($_id == "" ? "" : ";") + $(this).val();
+                    $_id += ($_id == "" ? "" : ";") + $(this).val();
 		});
 		if($_id == ""){
-			layer.msg("选择需要结算的数据"); return false;
+                    layer.msg("选择需要结算的数据"); return false;
 		}
-		
-		window.location.href = "/vshop/createOrder?te=car&ci="+$_id;
+                $.post('/index.php?m=Home&c=Order&a=createCarCache', {'type':'car', 'id':$_id}, function(data){
+                    if(data == 1){
+                        window.location.href = "/index.php?m=Home&c=Order&a=createOrder&type=car";
+                    }
+                });
 	});
 		   
 });

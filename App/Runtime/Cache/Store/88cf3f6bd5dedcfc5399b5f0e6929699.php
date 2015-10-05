@@ -216,9 +216,9 @@
                                                                     <td class="label">采购价:</td>
                                                                     <td>
                                                                         <input name="purchase_price" id="market_price" type="text" size="13" value="<?php echo ($goodsInfo["purchase_price"]); ?>" />
-                                                                        <b>市场价:</b><input name="market_price" id="shop_price" type="text" size="13" value="<?php echo ($goodsInfo["market_price"]); ?>" />
-                                                                        <b>原始价:</b><input name="shop_price" id="shop_price" type="text" size="13" value="<?php echo ($goodsInfo["price"]); ?>" />
                                                                         <b>折扣价:</b><input name="pifa_price" id="pifa_price" type="text" size="13" value="<?php echo ($goodsInfo["discount_price"]); ?>" />
+                                                                        <b>原始价:</b><input name="shop_price" id="shop_price" type="text" size="13" value="<?php echo ($goodsInfo["price"]); ?>" />
+                                                                        <b>市场价:</b><input name="market_price" id="shop_price" type="text" size="13" value="<?php echo ($goodsInfo["market_price"]); ?>" />
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -245,6 +245,12 @@
                                                                     <td>
                                                                         <img src="<?php echo getUploadUrl($goodsInfo['small_img']);?>" />
                                                                         <input name="goods_thumb" id="goods_thumb" type="file" value="" />
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="150">产品属性描述:</td>
+                                                                    <td>
+                                                                        <textarea name="goods_proper" id="goods_details" style="width: 60%; height: 65px; overflow: auto;"><?php echo ($goodsInfo["property"]); ?></textarea>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>

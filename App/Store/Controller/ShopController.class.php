@@ -83,6 +83,12 @@ class ShopController extends BaseController {
         } elseif ($isSetSendEmail == '2') {
             $saveData['is_set_send_email'] = '2';
         }
+        
+        $saveData['introduction'] = I('post.aboutCompany');
+        if($saveData['introduction'] == ''){
+            $this->error('请填写公司简介！');
+            exit;
+        }
 
         if ($_FILES['site_logo']['tmp_name']) {
             $date = date("Ymd");

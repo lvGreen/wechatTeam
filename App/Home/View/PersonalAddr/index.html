@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <include file='Public:header' />
+    <link href="__PUBLIC__/Home/Css/address.css" rel="stylesheet">
+    <script src="__PUBLIC__/Home/Js/layer.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/Home/Css/layer.css" id="layui_layer_skinlayercss">
+    <script src="__PUBLIC__/Home/Js/hide.js"></script>
+</head>
+<body onselectstart="return true;" ondragstart="return false;">
+    <div data-role="container" class="container my_address">
+        <header data-role="header"></header>
+        <section data-role="body" class="body">
+            <if condition="$addrList eq '1001' ">
+                <div style="width:100%; text-align:center; padding-top:80px; min-height:250px">
+                    <img src="__PUBLIC__/Home/Image/w_22.png" style="width:180px" />
+                </div>
+                <else />
+                <div>
+                    <ul id="list_address" class="list_address on">
+                        <volist name='addrList' id='item'>
+                            <li>
+                                <a href="{:U('Home/PersonalAddr/addAddr',array('addrId'=>$item['id']))}">
+                                    <label class="tbox" data-default="">
+                                        <div>
+                                            <p><label>姓名</label>&nbsp;{$item.receive_name}</p>
+                                            <p><label>电话</label>&nbsp;{$item.phone}</p>		
+                                            <p><label>地址</label>&nbsp;{$item.privince} {$item.city} {$item.town} {$item.address}</p>
+                                        </div>
+                                        <div>
+                                            <p style="width:60px;">&nbsp;</p>
+                                        </div>								
+                                    </label>								
+                                </a>
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+            </if>
+        </section>
+        <include file='Public:footerIndex' />
+    </div>
+<include file='Public:footer' />
+<script type='text/javascript'>
+    $(function () {
+        $("input[type='radio'][name='radAddress']").click(function () {
+            window.location.href = $('#bu').val() + '&addr=' + $(this).val();
+        });
+    });
+
+    function getaddr() {
+        WeixinJSBridge.invoke(
+                'editAddress',
+                {
+                    "appId": "wx0cd0ce55d9b28144",
+                    "scope": "jsapi_address",
+                    "signType": "sha1",
+                    "addrSign": "b03a25d619d8701a7a00d60451e6e7cc3ab443e4",
+                    "timeStamp": "1442803064",
+                    "nonceStr": "123456"
+                },
+        function (res) {
+            var msg = res.err_msg;
+            var arr = msg.split(':');
+            if (arr[1] == 'ok') {
+                layer.load(2);
+                $.post("/vshop/editAddress", {
+                    from: "weixin",
+                    name: res.userName,
+                    tel: res.telNumber,
+                    province: res.proviceFirstStageName,
+                    city: res.addressCitySecondStageName,
+                    area: res.addressCountiesThirdStageName,
+                    address: res.addressDetailInfo,
+                }, function (data) {
+                    if (data.status == -1) {
+                        layer.closeAll('loading');
+                        layer.msg(data.msg);
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 1000);
+                    } else if (data.status == 0) {
+                        layer.closeAll('loading');
+                        layer.msg(data.msg);
+                    } else if (data.status == 1) {
+                        setTimeout(function () {
+                            window.location.reload();
+                        }, 1000);
+                    }
+                }, "json");
+            }
+        }
+        );
+    }
+</script>
+</body>
+</html>
