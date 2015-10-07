@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>绿叶软件科技 & blank_page</title>
+    <include file='Public:publicHeader' />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/global.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/order_remind.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/content.css" media="all" /> 
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/calendar.css" media="all">
+    <script type="text/javascript" src="__PUBLIC__/Store/JS/calendar.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/Store/JS/calendar-setup.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/Store/JS/calendar-zh.js"></script>
+</head>
+<body>
+<include file='Public:publicTop' />
+<section id="page">
+    <include file='Public:publicCat' />
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <include file='Public:publicNotice' />
+                    <!-- /PAGE HEADER -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- SIMPLE STRIPED -->
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <!-- BOX -->
+                                    <div class="box border blue">
+                                        <include file='Public:publicTitle' />
+                                        <!-- 右边内容-->											
+                                        <div id="mainss" class="main" style="height: 969px; padding-top: 1px;">
+                                            <div class="contentbox">
+                                                <table cellspacing="2" cellpadding="5" width="100%" class="order_basic">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th align="left">订单详情列表</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>基本信息</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <table cellspacing="0" cellpadding="0" width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="label" width="15%">订单号：</td>
+                                                                            <td width="35%"  id='orderSn'>{$orderDetail.order_sn}</td>
+                                                                            <td class="label" width="15%">订单状态：</td>
+                                                                            <td width="35%">
+                                                                    <if condition="$orderDetail['status'] eq '0'">
+                                                                        未付款
+                                                                        <elseif condition="$orderDetail['status'] eq '1'" />
+                                                                        已付款
+                                                                        <elseif condition="$orderDetail['status'] eq '2'" />
+                                                                        已发货
+                                                                        <elseif condition="$orderDetail['status'] eq '3'" />
+                                                                        已收货
+                                                                        <elseif condition="$orderDetail['status'] eq '4'" />
+                                                                        退货中
+                                                                        <elseif condition="$orderDetail['status'] eq '5'" />
+                                                                        已退货
+                                                                        <elseif condition="$orderDetail['status'] eq '6'" />
+                                                                        退款中
+                                                                        <elseif condition="$orderDetail['status'] eq '7'" />
+                                                                        已退款
+                                                                    </if>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label" width="15%">购货人：</td>
+                                                            <td width="35%">{$orderDetail.ordername}</td>
+                                                            <td class="label" width="15%">下单时间：</td>
+                                                            <td width="35%">{:dateformat($orderDetail['add_time'])}</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="label" width="15%">支付方式：</td>
+                                                            <td width="35%">
+                                                    <if condition="$orderDetail['pay_type'] eq '0' ">
+                                                        微信支付
+                                                    </if>
+                                                    </td>
+                                                    <td class="label" width="15%">产品总价：</td>
+                                                    <td>{$orderDetail.totalprice}</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>收货人信息</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table cellspacing="0" cellpadding="0" width="100%" class="order_basic">
+                                                            <tbody><tr>
+                                                                    <td class="label" width="15%">收货人：</td>
+                                                                    <td width="35%">{$orderDetail.receive_name}</td>
+                                                                    <td class="label" width="15%">物流公司：</td>
+                                                                    <td width="35%"><input type='text' name='shippingCompany' value='{$orderDetail.shipping_company}' /></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="15%">收货地址：</td>
+                                                                    <td width="35%">{$orderDetail.privince}{$orderDetail.city}{$orderDetail.town}{$orderDetail.address}</td>
+                                                                    <td class="label" width="15%">物流单号：</td>
+                                                                    <td width="35%"><input type='text' name='shippingOrder' value='{$orderDetail.shipping_order}' /></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="15%">电话|手机：</td>
+                                                                    <td width="35%">{$orderDetail.phone}</td>
+                                                                    <td class="label" width="15%">邮费：</td>
+                                                                    <td width="35%">￥0.00</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>商品信息</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table cellspacing="0" cellpadding="0" width="100%">
+                                                            <tbody><tr align="center">
+                                                                    <td><strong>商品条形码</strong></td>
+                                                                    <td><strong>商品名称[品牌]</strong></td>
+                                                                    <td><strong>数量</strong></td>
+                                                                    <td><strong>单价</strong></td>
+                                                                    <td><strong>金额</strong></td>
+                                                                </tr>
+                                                            <volist name='orderDetail.goods' id='item'>
+                                                                <tr align="center">
+                                                                    <td>{$item.bar_code}</td>
+                                                                    <td>{$item.title}</td>
+                                                                    <td>{$item.count}</td>
+                                                                    <td>{$item.singleprice}</td>
+                                                                    <td>￥{$item.total}</td>
+                                                                </tr>
+                                                            </volist>
+                                                            <tr align="center">
+                                                                <td colspan="4" align="right">总价:</td><td>¥{$orderDetail.totalprice}</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>操作信息</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <table cellspacing="0" cellpadding="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="15%"><strong>当前可执行操作:</strong></td>
+                                                                    <td id="get_button">
+                                                            <if condition="$orderDetail['status'] eq '1'">
+                                                                <input name='shipping' value="确认发货" class="order_action" type="button" />
+                                                            <elseif condition="$orderDetail['status'] eq '3'" />
+                                                                <input name='order'  value="退货" class="order_action" type="button" />
+                                                                <input name='money' value="退款" class="order_action" type="button" />
+                                                            <else />
+                                                            无
+                                                            </if>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                                </table> 
+                                                </td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type='text/javascript'>
+    $(function () {
+        $("input[name='shipping']").click(function(){
+            var orderSn = $('#orderSn').text();
+            var shippingCompany = $('input[name=shippingCompany]').val();
+            var shippingOrder = $('input[name=shippingOrder]').val();
+            $.post('{:U("Store/Order/addShippingInfo")}', {'orderSn':orderSn, 'shippingCompany':shippingCompany, 'shippingOrder':shippingOrder}, function(data){
+                data = eval(data);
+                if(data['error'] == '0'){
+                    alert('msg');
+                    window.location.reload();
+                }else{
+                    alert(data['msg']);
+                }
+            });
+        });
+        
+        $("input[name='order']").click(function(){
+            var orderSn = $('#orderSn').text();
+            $.post('{:U("Store/Order/changeOrderStatus")}', {'act':'order', 'orderSn':orderSn}, function(data){
+                
+            });
+        });
+        
+        
+        $("input[name='money']").click(function(){
+            var orderSn = $('#orderSn').text();
+            $.post('{:U("Store/Order/changeOrderStatus")}', {'act':'money', 'orderSn':orderSn}, function(data){
+                
+            });
+        });
+    });
+</script>
+</body>
+</html>

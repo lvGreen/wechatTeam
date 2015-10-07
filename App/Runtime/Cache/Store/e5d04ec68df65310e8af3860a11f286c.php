@@ -33,8 +33,8 @@
  <header class="navbar clearfix" id="header">
     <div class="container">
         <div class="navbar-brand">
-            <a href="index.html">
-                <img src="/Public/Store/Image/frame/images/logo.png" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120">
+            <a href="javascript:void(0)">
+                <img src="<?php echo ($_SESSION["logo"]); ?>" alt="Cloud Admin Logo" class="img-responsive" height="30" width="120" />
             </a>
             <div class="visible-xs">
                 <a href="#" class="team-status-toggle switcher btn dropdown-toggle">
@@ -59,15 +59,12 @@
         <ul class="nav navbar-nav pull-right">
             <li class="dropdown user" id="header-user">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img alt="" src="/Public/Store/Image/frame/images/avatar.jpg" />
-                    <span class="username">Admin</span>
+                    <img alt="" src="<?php echo ($_SESSION["logo"]); ?>" />
+                    <span class="username"><?php echo ($_SESSION["user"]); ?></span>
                     <i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#"><i class="fa fa-user"></i> 我的账户</a></li>
-                    <li><a href="#"><i class="fa fa-cog"></i> 账户设置</a></li>
-                    <li><a href="#"><i class="fa fa-eye"></i> 个人设置</a></li>
-                    <li><a href="login.html"><i class="fa fa-power-off"></i> 退出</a></li>
+                    <li><a href="<?php echo U('Store/Index/logout');?>"><i class="fa fa-power-off"></i> 退出</a></li>
                 </ul>
             </li>
         </ul>
@@ -77,12 +74,9 @@
     <div id="sidebar" class="sidebar">
     <div class="sidebar-menu nav-collapse">
         <div class="divide-20"></div>
-        <div id="search-bar">
-            <input class="search" type="text" placeholder="绿叶科技"><i class="fa fa-search search-icon"></i>
-        </div>
         <ul>
             <?php if(is_array($cat)): $i = 0; $__LIST__ = $cat;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$catItem): $mod = ($i % 2 );++$i;?><li class="has-sub">
-                    <a <?php if($catItem["url"] == '' ): ?>href="javascript:;" <?php else: ?> href="<?php echo ($catItem["url"]); ?>"<?php endif; ?>class="">
+                    <a <?php if($catItem['url'] != '' ): ?>href="<?php echo ($catItem["url"]); ?>" <?php else: ?> href="javascript:void(0);"<?php endif; ?>class="">
                         <i class="fa fa-bookmark-o fa-fw"></i> <span class="menu-text"><?php echo ($catItem["name"]); ?></span>
                         <span class="arrow"></span>
                     </a>

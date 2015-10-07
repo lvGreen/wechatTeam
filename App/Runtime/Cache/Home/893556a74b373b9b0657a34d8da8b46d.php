@@ -143,7 +143,7 @@
                             </a>
                         </li>
                         <li class="member">
-                            <a href="buycar.html" class="link_buycar ">
+                            <a href="<?php echo U('Home/Order/buyCar');?>" class="link_buycar ">
                                 <span class="member">&nbsp;</span>购物车
                             </a>
                         </li>
@@ -244,7 +244,7 @@
             <div class="widget_wrap">
                 <ul>
                     <li style="margin-bottom:20px">
-                        <a href="addAddr.html" class="btn red" id="btn_addAddress" style="color:#FFFFFF">新增收货地址</a>
+                        <a href="<?php echo U('Home/PersonalAddr/addAddr');?>" class="btn red" id="btn_addAddress" style="color:#FFFFFF">新增收货地址</a>
                     </li>
 <!--                    <li>
                         <a href="javascript:;" onclick="getaddr();" class="btn red" id="btn_addAddress" style="color:#FFFFFF">使用微信收货地址</a>

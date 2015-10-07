@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>绿叶软件科技 & blank_page</title>
+    <include file='Public:publicHeader' />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/global.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/order_remind.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/content.css" media="all" />
+</head>
+<body>
+<include file='Public:publicTop' />
+<section id="page">
+    <include file='Public:publicCat' />
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <include file='Public:publicNotice' />
+                    <!-- /PAGE HEADER -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- SIMPLE STRIPED -->
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <!-- BOX -->
+                                    <div class="box border blue">
+                                        <include file='Public:publicTitle' />
+                                        <!-- 右边内容-->											
+                                        <div id="mainss" class="main" style="height: 969px; padding-top: 1px;">
+                                            <div class="contentbox">
+                                                <form action="{:U('Store/Distribution/addDistributionConfig')}" method="post" enctype="multipart/form-data" name="theForm" id="theForm">
+                                                    <div class="menu_content">
+                                                        <table cellspacing="2" cellpadding="5" width="100%">
+                                                            <tbody><tr>
+                                                                    <td class="label" width="15%">消费送积分：<br>[购买者]&nbsp;&nbsp;</td>
+                                                                    <td>
+                                                                        消费1元获得<input name="pointnum" value="1" readonly size="10" type="text">&nbsp;<font color="#FF0000">*</font>&nbsp;<input name="pointnum_ag" value="{$distributionInfo.customer_point}" size="10" type="text">&nbsp;积分
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="15%">消费送积分：<br>[一级分销]&nbsp;&nbsp;</td>
+                                                                    <td>
+                                                                        消费1元获得<input name="tjpointnum" value="1" readonly size="10" type="text">&nbsp;<font color="#FF0000">*</font>&nbsp;<input name="tjpointnum_ag" value="{$distributionInfo.point}" size="10" type="text">&nbsp;积分
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="15%">消费送积分：<br>[二级分销]&nbsp;&nbsp;</td>
+                                                                    <td>
+                                                                        消费1元获得<input name="tjpointnum2" value="1" readonly size="10" type="text">&nbsp;<font color="#FF0000">*</font>&nbsp;<input name="tjpointnum_ag2" value="{$distributionInfo.two_point}" size="10" type="text">&nbsp;积分
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="15%">消费送积分：<br>[三级分销]&nbsp;&nbsp;</td>
+                                                                    <td>
+                                                                        消费1元获得<input name="tjpointnum3" value="1" readonly size="10" type="text">&nbsp;<font color="#FF0000">*</font>&nbsp;<input name="tjpointnum_ag3" value="{$distributionInfo.three_point}" size="10" type="text">&nbsp;积分
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">关注送积分：</td>
+                                                                    <td>
+                                                                        关注所得<input name="ticheng360_2" value="{$distributionInfo.concern_point}" size="10" type="text">积分
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">数量享折扣：</td>
+                                                                    <td>
+                                                                        数量：<input name="discountNumber" value="{$distributionInfo.discount_number}" size="10" type="text" />
+                                                                        折扣：<input name="address2off" value="{$distributionInfo.discount}" size="10" type="text" />%。【相对关注后的价格再折扣】<br><br>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">关注享折扣：</td>
+                                                                    <td>
+                                                                        关注后享<input name="guanzhuoff" value="{$distributionInfo.concern_discount}" size="6" type="text">%
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label" width="15%">最小提款额度：</td>
+                                                                    <td>
+                                                                        <input name="tixian" value="{$distributionInfo.lower_commission_money}" size="10" type="text">元
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">一级分销提成点：</td>
+                                                                    <td>
+                                                                        <input name="ticheng180_1" value="{$distributionInfo.commission}" size="10" type="text">%<br>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">二级分销提成点：</td>
+                                                                    <td>
+                                                                        <input name="ticheng180_h1_1" value="{$distributionInfo.two_commission}" size="10" type="text">%<br>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">二级分销提成点：</td>
+                                                                    <td>
+                                                                        <input name="ticheng180_h2_1" value="{$distributionInfo.three_commission}" size="10" type="text">%<br>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">开通分销设置：</td>
+                                                                    <td>
+                                                                        <label>&nbsp;购买自动开通&nbsp;
+                                                                        </label>
+                                                                        【最小购买金额<input name="openfx_minmoney" value="{$distributionInfo.lower_money}" size="10" type="text" />元】
+                                                                        <em style="color:#FF0000">如果设置了级别升级，这里的优先级低</em>&nbsp;&nbsp;
+                                                                        <label>&nbsp;人数下限&nbsp;
+                                                                        </label>【下限<input name="lower_Man" value="{$distributionInfo.lower_man}" size="10" type="text">人】
+                                                                        <em style="color:#FF0000">这里是或的关系</em>&nbsp;&nbsp;
+                                                                        <label><input type="checkbox" name="openfxauto" value="1" <if condition="$distributionInfo['default_concern'] eq '1' "> checked="checked" </if>  />&nbsp;默认关注后自动开通&nbsp;&nbsp;</label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">二级分销设置：</td>
+                                                                    <td>
+                                                                        <label>&nbsp;购买自动开通&nbsp;
+                                                                        </label>
+                                                                        【最小购买金额<input name="openfx_minmoneyTwo" value="{$distributionInfo['lower_money_two']}" size="10" type="text" />元】
+                                                                        <em style="color:#FF0000">如果设置了级别升级，这里的优先级低</em>&nbsp;&nbsp;
+                                                                        <label>&nbsp;人数下限&nbsp;
+                                                                        </label>【下限<input name="lower_ManTwo" value="{$distributionInfo['lower_man_two']}" size="10" type="text">人】
+                                                                        <label><input type="checkbox" name="bothTwo" value="1" <if condition="$distributionInfo['both_two'] eq '1' "> checked="checked" </if> />&nbsp;两者都满足才生效&nbsp;&nbsp;</label>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="label">三级分销设置：</td>
+                                                                    <td>
+                                                                        <label>
+                                                                            &nbsp;购买自动开通&nbsp;
+                                                                        </label>
+                                                                        【最小购买金额<input name="openfx_minmoneyThree" value="{$distributionInfo['lower_money_three']}" size="10" type="text" />元】
+                                                                        <em style="color:#FF0000">如果设置了级别升级，这里的优先级低</em>&nbsp;&nbsp;
+                                                                        <label>&nbsp;人数下限&nbsp;
+                                                                        </label>【下限<input name="lower_ManThree" value="{$distributionInfo['lower_man_three']}" size="10" type="text">人】
+                                                                        <label><input type="checkbox" name="bothThree" value="1" <if condition="$distributionInfo['both_three'] eq '1' "> checked="checked" </if> />&nbsp;两者都满足才生效&nbsp;&nbsp;</label>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                            <input type='hidden' name='configId' value="{$distributionInfo.id}" />
+                                                        </table>
+                                                        <p style="text-align:center;">
+                                                            <input class="new_save" value="确认保存" type="Submit" style="cursor:pointer">&nbsp;
+                                                        </p>
+                                                        <div style="clear:both"></div>
+                                                    </div> 
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

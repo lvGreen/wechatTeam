@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>绿叶软件科技 & blank_page</title>
+    <include file='Public:publicHeader' />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/global.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/style.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/order_remind.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/content.css" media="all" /> 
+    <link type="text/css" rel="stylesheet" href="__PUBLIC__/Store/Css/calendar.css" media="all">
+    <script type="text/javascript" src="__PUBLIC__/Store/JS/calendar.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/Store/JS/calendar-setup.js"></script> 
+    <script type="text/javascript" src="__PUBLIC__/Store/JS/calendar-zh.js"></script>
+</head>
+<body>
+<include file='Public:publicTop' />
+<section id="page">
+    <include file='Public:publicCat' />
+    <div id="main-content">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-lg-12">
+                    <include file='Public:publicNotice' />
+                    <!-- /PAGE HEADER -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <!-- SIMPLE STRIPED -->
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <!-- BOX -->
+                                    <div class="box border blue">
+                                        <include file='Public:publicTitle' />
+                                        <!-- 右边内容-->											
+                                        <div id="mainss" class="main" style="height: 969px; padding-top: 1px;">
+                                            <div class="contentbox">
+                                                <table cellspacing="2" cellpadding="5" width="100%">
+                                                    <tbody>
+                                                        <form action="index.php?m=Store&c=Order&a=orderList" method='post' >
+                                                        <tr>
+                                                            <th colspan="7" align="left">订单列表&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                选择时间：<input type="text" id="EntTime1" name="EntTime1" onclick="return showCalendar(&#39;EntTime1&#39;, &#39;y-mm-dd&#39;);" />
+                                                                至
+                                                                <input type="text" id="EntTime2" name="EntTime2" onclick="return showCalendar(&#39;EntTime2&#39;, &#39;y-mm-dd&#39;);" />	
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th colspan="7" align="left">
+                                                                <img src="__PUBLIC__/Store/Image/icon_search.gif" alt="SEARCH" width="26" border="0" height="22" align="absmiddle">
+                                                                订单号<input name="order_sn" size="15" type="text" value="" />
+                                                                收货人<input name="consignee" size="15" type="text" value="" />
+                                                                订单状态 
+                                                                <select name="status">
+                                                                    <option value="-1">请选择</option>
+                                                                    <option value="0">待付款</option>
+                                                                    <option value="1">已付款</option>
+                                                                    <option value="2">已发货</option>
+                                                                    <option value="3">已收货</option>
+                                                                    <option value="4">退货中</option>
+                                                                    <option value="5">已退货</option>
+                                                                    <option value="6">退款中</option>
+                                                                    <option value="7">已退款</option>
+                                                                </select>
+                                                                <input value=" 搜索 " class="order_search" type="submit" />
+                                                            </th>
+                                                        </tr>
+                                                        </form>
+                                                        <tr>
+                                                            <th>订单号</th>
+                                                            <th>下单时间</th>
+                                                            <th>收货人</th>
+                                                            <th>总金额</th>
+                                                            <th>订单状态</th>
+                                                            <th>操作</th>
+                                                        </tr>
+                                                    <volist name='orderList' id='item'>
+                                                        <tr>
+                                                            <td>{$item.order_sn}</td>
+                                                            <td>{:dateformat($item['add_time'])}</td>
+                                                            <td>{$item.receive_name}</td>
+                                                            <td>{$item.receive_name}</td>
+                                                            <td>
+                                                        <if condition="$item['status'] eq '0'">
+                                                            未付款
+                                                            <elseif condition="$item['status'] eq '1'" />
+                                                            已付款
+                                                            <elseif condition="$item['status'] eq '2'" />
+                                                            已发货
+                                                            <elseif condition="$item['status'] eq '3'" />
+                                                            已收货
+                                                            <elseif condition="$item['status'] eq '4'" />
+                                                            退货中
+                                                            <elseif condition="$item['status'] eq '5'" />
+                                                            已退货
+                                                            <elseif condition="$item['status'] eq '6'" />
+                                                            退款中
+                                                            <elseif condition="$item['status'] eq '7'" />
+                                                            已退款
+                                                        </if>
+                                                        </td>
+                                                        <td>
+                                                            <a href="{:U('Store/Order/orderDetail', array('order'=>$item['order_sn']))}" title="编辑">
+                                                                <img src="__PUBLIC__/Store/Image/icon_view.gif" title="编辑" /></a>&nbsp;
+                                                        </td>
+                                                        </tr>
+                                                    </volist>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type='text/javascript'>
+</script>
+</body>
+</html>

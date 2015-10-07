@@ -43,10 +43,13 @@ class IndexController extends Controller {
         $blogService = D('Check', 'Service');
         $pass = $blogService->createPass($passArray);
         if ($pass == $userInfo['password']) {
+            $shopLogo = M('Company')->where(array('user_id'=>$userInfo['id']))->getfield('logo');
             $_SESSION['user'] = $userInfo['user'];
             $_SESSION['role'] = $userInfo['role'];
             $_SESSION['userId'] = $userInfo['id'];
             $_SESSION['unique_code'] = $userInfo['unique_code'];
+            $_SESSION['logo'] = getUploadUrl($shopLogo);
+            $_SESSION['expire'] = time()+1800;
             $result['error'] = '0';
             $result['url'] = U('Store/Shop/index');
         } else {
@@ -54,6 +57,11 @@ class IndexController extends Controller {
             $result['msg'] = '账号或密码错误，请重新输入！';
         }
         $this->ajaxReturn($result);
+    }
+    
+    public function logout(){
+        session(NULL);
+        redirect(U('Store/Index/login'));
     }
 
 //    public function createAccount() {

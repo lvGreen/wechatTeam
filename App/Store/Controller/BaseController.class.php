@@ -8,8 +8,13 @@ class BaseController extends Controller {
         parent::__construct();
         if($_SESSION['user'] == ''){
             redirect(U('Store/Index/login'));
+        }else{
+            if($_SESSION['expire'] < time()){
+                redirect(U('Store/Index/login'));
+            }else{
+                $_SESSION['expire'] = time()+1800;
+            }
         }
-        
         $this->_getCat();
     }
     

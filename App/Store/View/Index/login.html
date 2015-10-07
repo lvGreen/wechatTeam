@@ -69,13 +69,13 @@
         <script src="__PUBLIC__/Store/JS/supersized-init.js"></script>
         <script src="__PUBLIC__/Store/JS/scripts.js"></script>
         <script type="text/javascript">
-            $(function(){
+            $(function () {
                 $('#submit_btn').click(function () {
                     submit_data(this);
                 });
-                
-                $('#verifyImg').click(function(){
-                    $(this).attr('src',"{:U('Store/Index/createVerify')}");
+
+                $('#verifyImg').click(function () {
+                    $(this).attr('src', "{:U('Store/Index/createVerify')}");
                 });
 
                 function submit_data(obj) {
@@ -83,15 +83,14 @@
                     var pas = $('input[name=password]').val();
                     var vifcodes = $('input[name=vifcode]').val();
                     if (name == "" || pas == "" || vifcodes == "") {
-                    $('.error_msg').html("输入完整信息！");
+                        $('.error_msg').html("输入完整信息！");
                         return false;
                     }
                     $(obj).val("Login...");
                     $.post("{:U('Store/Index/userLogin')}", {action: 'login', adminname: name, password: pas, vifcode: vifcodes}, function (data) {
                         data = eval(data);
-                        console.log(data);
                         if (data['error'] != "0") {
-                            $('.error_msg').html(data['msg']);
+                            alert(data['msg']);
                         } else {
                             window.location.href = data['url'];
                             return;

@@ -123,7 +123,9 @@ class OrderController extends BaseController {
         $orderSNStr = time() . $addrId;
         $saveData['order_sn'] = md5($orderSNStr);
         $saveData['user_addr_id'] = $addrId;
-
+        
+        $distributionInfo = M('DistributionConfig')->where(array('shop_code'=>$_SESSION['wapShop']))->field('discount, discount_number, concern_discount')->find();
+        
         $orderType = I('post.orderType');
         switch ($orderType) {
             case 'car':
@@ -131,7 +133,9 @@ class OrderController extends BaseController {
                 $shopService = D('Shop', 'Service');
                 $goodsInfo = $shopService->getCashCarGoods();
                 $totalMoney = 0;
+                $totalCount = 0;
                 foreach ($goodsInfo as $goods) {
+                    $totalCount += $goods['count'];
                     $totalMoney += $goods['count'] * $goods['price'];
                 }
                 $saveData['price'] = $totalMoney;
@@ -141,10 +145,16 @@ class OrderController extends BaseController {
                 $saveData['order_type'] = '1';
                 $goodsCode = I('post.goodsCode');
                 $singleGoods = M('Goods')->where(array('goods_code'=>$goodsCode))->field('price, unless_count')->find();
-                $count = (int) I('post.goodsCount');
-                $saveData['price'] = $singleGoods['price'] * $count;
+                $totalCount = (int) I('post.goodsCount');
+                $saveData['price'] = $singleGoods['price'] * $totalCount;
                 break;
             default :
+        }
+        if($distributionInfo['concern_discount'] != '0' && $_SESSION['user']['subscribe'] != '0'){
+            $saveData['price'] = $saveData['price'] * $distributionInfo['concern_discount'] / 100;
+        }
+        if($distributionInfo['discount'] != '0' && $distributionInfo['discount_number'] != '0' && $totalCount >= $distributionInfo['discount_number']){
+            $saveData['price'] = $saveData['price'] * $distributionInfo['discount'] / 100;
         }
         $saveData['explain'] = I('post.remark');
         $saveData['pay_type'] = I('post.paytype');

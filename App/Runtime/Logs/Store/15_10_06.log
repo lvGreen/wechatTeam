@@ -1,0 +1,1706 @@
+[ 2015-10-06T13:46:27+08:00 ] 127.0.0.1 /index.php?m=Store&c=Goods&a=goodsList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0007s ]
+NOTIC: [2] include(Store\Service\GoodsService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\GoodsService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] Missing argument 1 for Store\Service\GoodsService::getGoodsClass(), called in /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php on line 134 and defined /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 12 行.
+NOTIC: [8] Undefined variable: type /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: unique_code /Users/badasslittlepig/www/wechatTeam/App/Store/Service/GoodsService.class.php 第 17 行.
+SQL: SELECT * FROM `shop_class` WHERE `shop_code` = null AND `type` = '1' AND `is_delete` <> '0'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0019s ]
+NOTIC: [2] include(Store\Model\GoodsModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\GoodsModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: unique_code /Users/badasslittlepig/www/wechatTeam/App/Store/Controller/GoodsController.class.php 第 161 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0014s ]
+SQL: SELECT gs.id,gs.title,gs.price,gs.market_price,gs.purchase_price,gs.discount_price,gs.distribution_price,gs.count,gs.unless_count,gs.small_img,gs.add_time,gs.is_hot,gs.is_new,gs.is_recommend,gs.status,cs.name FROM shop_goods gs INNER JOIN shop_class cs ON cs.id = gs.class_id  WHERE gs.shop_code = null AND gs.status = '1'  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/1177de5c65e084521b40c9606877030e.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2015-10-06T13:46:48+08:00 ] 127.0.0.1 /index.php?m=Store&c=Index&a=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./App/Store/View/public/footer.html): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2015-10-06T13:46:48+08:00 ] 127.0.0.1 /index.php?m=Store&c=Index&a=createVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2015-10-06T13:47:00+08:00 ] 127.0.0.1 /index.php?m=Store&c=Index&a=userLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+NOTIC: [2] include(Store\Model\UserModel.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Model\UserModel.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] include(Store\Service\CheckService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Store\Service\CheckService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+
+[ 2015-10-06T13:47:00+08:00 ] 127.0.0.1 /index.php?m=Store&c=Shop&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `is_recommend` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_goods` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `status` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `shop_order` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `status` = '3' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e5d04ec68df65310e8af3860a11f286c.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2015-10-06T13:47:34+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+NOTIC: [8] Undefined variable: goodsInfo /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 289 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-10-06T13:50:23+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+NOTIC: [8] Undefined variable: goodsInfo /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 289 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-10-06T13:57:19+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+NOTIC: [8] Undefined variable: goodsInfo /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 259 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2015-10-06T14:01:23+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+NOTIC: [8] Undefined variable: goodsInfo /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019432s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2015-10-06T14:02:27+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+NOTIC: [8] Undefined variable: goodsInfo /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 236 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2015-10-06T14:04:22+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+NOTIC: [8] Undefined variable: goodsInfo /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 264 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2015-10-06T14:05:50+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+NOTIC: [8] Undefined variable: goodsInfo /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 265 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2015-10-06T14:18:14+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2015-10-06T14:18:48+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2015-10-06T14:19:06+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2015-10-06T14:19:13+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2015-10-06T14:42:50+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2015-10-06T14:43:14+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2015-10-06T14:43:27+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2015-10-06T14:43:32+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2015-10-06T18:00:32+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000666s ]
+
+[ 2015-10-06T18:00:42+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0011s ]
+SQL: INSERT INTO `shop_distribution_config` (`customer_point`,`point`,`two_point`,`three_point`,`concern_point`,`discount`,`discount_number`,`concern_discount`,`lower_commission_money`,`commission`,`two_commission`,`three_commission`,`lower_money`,`lower_man`,`default_concern`,`lower_money_two`,`lower_man_two`,`both_two`,`lower_money_three`,`lower_man_three`,`both_three`,`shop_code`,`add_time`) VALUES ('1','1','1','1','100','90','90','95','50','20','40','50','100','27','','100','27','','100','27','','2139b23d014f8f03990c4f132d82457c','20151006180042') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2015-10-06T18:02:53+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0013s ]
+SQL: INSERT INTO `shop_distribution_config` (`customer_point`,`point`,`two_point`,`three_point`,`concern_point`,`discount`,`discount_number`,`concern_discount`,`lower_commission_money`,`commission`,`two_commission`,`three_commission`,`lower_money`,`lower_man`,`default_concern`,`lower_money_two`,`lower_man_two`,`both_two`,`lower_money_three`,`lower_man_three`,`both_three`,`shop_code`,`add_time`) VALUES ('1','1','1','1','100','90','90','95','50','20','40','50','100','27','','100','27','','100','27','','2139b23d014f8f03990c4f132d82457c','20151006180253') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-10-06T18:07:39+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0010s ]
+SQL: INSERT INTO `shop_distribution_config` (`customer_point`,`point`,`two_point`,`three_point`,`concern_point`,`discount`,`discount_number`,`concern_discount`,`lower_commission_money`,`commission`,`two_commission`,`three_commission`,`lower_money`,`lower_man`,`default_concern`,`lower_money_two`,`lower_man_two`,`both_two`,`lower_money_three`,`lower_man_three`,`both_three`,`shop_code`,`add_time`) VALUES ('1','1','1','1','100','90','90','95','50','20','40','50','100','27','0','100','27','0','100','27','0','2139b23d014f8f03990c4f132d82457c','20151006180739') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2015-10-06T18:10:05+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2015-10-06T18:22:01+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+
+[ 2015-10-06T18:45:11+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-10-06T18:46:43+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2015-10-06T18:46:53+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=addDistributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0011s ]
+SQL: UPDATE `shop_distribution_config` SET `customer_point`='1',`point`='1',`two_point`='1',`three_point`='1',`concern_point`='100',`discount`='90',`discount_number`='90',`concern_discount`='95',`lower_commission_money`='50',`commission`='20',`two_commission`='40',`three_commission`='50',`lower_money`='0',`lower_man`='0',`default_concern`='1',`lower_money_two`='100',`lower_man_two`='27',`both_two`='0',`lower_money_three`='100',`lower_man_three`='27',`both_three`='0' WHERE `id` = 3 AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009307s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2015-10-06T18:46:54+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2015-10-06T18:48:34+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-10-06T18:49:59+08:00 ] 127.0.0.1 /index.php?m=Store&c=Distribution&a=distributionConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_distribution_config` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `shop_distribution_config` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/e679919e0afd84e9da7b66431cf1a11a.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2015-10-06T18:53:47+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0008s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000544s ]
+
+[ 2015-10-06T18:54:16+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0011s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-10-06T18:55:57+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2015-10-06T18:57:55+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0014s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2015-10-06T18:58:26+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2015-10-06T18:58:53+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2015-10-06T18:59:06+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0011s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2015-10-06T18:59:55+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2015-10-06T19:00:49+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2015-10-06T19:01:09+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0008s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2015-10-06T19:01:35+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0018s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2015-10-06T19:05:44+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+NOTIC: [8] Undefined variable: themeId /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 152 行.
+NOTIC: [8] Undefined variable: themeId /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 157 行.
+NOTIC: [8] Undefined variable: themeId /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015460s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2015-10-06T19:06:05+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0008s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-10-06T19:12:27+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2015-10-06T19:13:05+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0012s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2015-10-06T19:13:06+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=changeThemeId
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0011s ]
+SQL: UPDATE `shop_user` SET `theme`='' WHERE `user` = 'admin' [ RunTime:0.0005s ]
+
+[ 2015-10-06T19:13:08+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2015-10-06T19:13:27+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2015-10-06T19:13:28+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=changeThemeId
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0011s ]
+SQL: UPDATE `shop_user` SET `theme`='1' WHERE `user` = 'admin' [ RunTime:0.0004s ]
+
+[ 2015-10-06T19:13:30+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0008s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2015-10-06T19:13:32+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=changeThemeId
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: UPDATE `shop_user` SET `theme`='2' WHERE `user` = 'admin' [ RunTime:0.0004s ]
+
+[ 2015-10-06T19:13:33+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2015-10-06T19:13:37+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=changeThemeId
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0011s ]
+SQL: UPDATE `shop_user` SET `theme`='1' WHERE `user` = 'admin' [ RunTime:0.0005s ]
+
+[ 2015-10-06T19:13:38+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2015-10-06T19:14:52+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0009s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-10-06T19:14:57+08:00 ] 127.0.0.1 /index.php?m=Store&c=Template&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0008s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `user` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 95 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/50228ab554861bc388ef7968cd47b252.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2015-10-06T19:29:36+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000850s ]
+
+[ 2015-10-06T22:43:12+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 92 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2015-10-06T22:45:22+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2015-10-06T22:46:24+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2015-10-06T22:47:01+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017962s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2015-10-06T22:50:18+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2015-10-06T22:50:45+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000392s ]
+
+[ 2015-10-06T22:52:17+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2015-10-06T22:54:51+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000359s ]
+
+[ 2015-10-06T22:55:52+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2015-10-06T22:56:26+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2015-10-06T22:56:54+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2015-10-06T22:59:16+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2015-10-06T22:59:53+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2015-10-06T23:00:55+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2015-10-06T23:01:40+08:00 ] 127.0.0.1 /index.php?m=Store&c=Order&a=orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `shop_catalog` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `shop_catalog` ORDER BY parent_id ASC , `index` ASC  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: next /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 96 行.
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Store/f12689960ac6606dc336299550997363.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000340s ]
+

@@ -1,13 +1,10 @@
 <div id="sidebar" class="sidebar">
     <div class="sidebar-menu nav-collapse">
         <div class="divide-20"></div>
-        <div id="search-bar">
-            <input class="search" type="text" placeholder="绿叶科技"><i class="fa fa-search search-icon"></i>
-        </div>
         <ul>
             <volist name='cat' id='catItem'>
                 <li class="has-sub">
-                    <a <if condition="$catItem.url eq '' ">href="javascript:;" <else /> href="{$catItem.url}" </if>class="">
+                    <a <if condition="$catItem['url'] neq '' ">href="{$catItem.url}" <else /> href="javascript:void(0);" </if>class="">
                         <i class="fa fa-bookmark-o fa-fw"></i> <span class="menu-text">{$catItem.name}</span>
                         <span class="arrow"></span>
                     </a>

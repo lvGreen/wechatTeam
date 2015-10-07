@@ -1,0 +1,216 @@
+[ 2015-10-07T10:58:16+08:00 ] 127.0.0.1 /index.php?EntTime1=2015-10-01&EntTime2=2015-10-15&order_sn=&consignee=&status=-1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 16 行.
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+
+[ 2015-10-07T10:59:04+08:00 ] 127.0.0.1 /index.php?EntTime1=&EntTime2=&order_sn=sasas&consignee=&status=-1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 16 行.
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+
+[ 2015-10-07T16:02:17+08:00 ] 127.0.0.1 /index.php?m=Home&c=PersonalAddr&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 16 行.
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+
+[ 2015-10-07T16:02:20+08:00 ] 127.0.0.1 /index.php?m=Home&c=PersonalAddr&a=addAddr
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 16 行.
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+
+[ 2015-10-07T16:02:26+08:00 ] 127.0.0.1 /index.php?m=Home&c=PersonalAddr&a=addAddr&addrId=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 16 行.
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+
+[ 2015-10-07T16:02:32+08:00 ] 127.0.0.1 /index.php?m=Home&c=PersonalCenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 16 行.
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+
+[ 2015-10-07T16:02:35+08:00 ] 127.0.0.1 /index.php?m=Home&c=Shop&a=index&shop=2139b23d014f8f03990c4f132d82457c
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined index: wapShop /Users/badasslittlepig/www/wechatTeam/App/Home/Controller/BaseController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0016s ]
+SQL: SELECT sc.name,sc.address,sc.title,sc.logo,sc.service_phone,sc.service_qq FROM shop_user su INNER JOIN shop_company sc ON su.id = sc.user_id  WHERE su.unique_code = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `shop_wechat_user` [ RunTime:0.0014s ]
+SQL: SELECT `nickname`,`headimgurl`,`subscribe` FROM `shop_wechat_user` WHERE `open_id` = 'ok_Tas7S8rDGbcYce8u97I6g7HK8' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_user` [ RunTime:0.0010s ]
+SQL: SELECT `theme` FROM `shop_user` WHERE `unique_code` = '2139b23d014f8f03990c4f132d82457c' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_banner` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `shop_banner` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `status` = '1'  [ RunTime:0.0002s ]
+SQL: SELECT `banner_img` FROM `shop_banner` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `status` = '1' ORDER BY `index` DESC LIMIT 5   [ RunTime:0.0002s ]
+NOTIC: [2] include(Home\Service\ShopService.class.php): failed to open stream: No such file or directory /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+NOTIC: [2] include(): Failed opening 'Home\Service\ShopService.class.php' for inclusion (include_path='.:/usr/local/php5/lib/php') /Users/badasslittlepig/www/wechatTeam/ThinkPHP/Common/functions.php 第 587 行.
+SQL: SHOW COLUMNS FROM `shop_class` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`name`,`parent_id` FROM `shop_class` WHERE `shop_code` = '2139b23d014f8f03990c4f132d82457c' AND `type` = '1' AND `is_delete` = '1'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `shop_goods` WHERE `status` = '1' AND `shop_code` = '2139b23d014f8f03990c4f132d82457c' ORDER BY `index` desc LIMIT 2   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 5 行.
+NOTIC: [8] Undefined variable: mataKeyWords /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 8 行.
+NOTIC: [8] Undefined variable: mataKeyDis /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 9 行.
+NOTIC: [8] Undefined index: url /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 35 行.
+NOTIC: [8] Undefined index: url /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 35 行.
+NOTIC: [8] Undefined index: url /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 35 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 77 行.
+NOTIC: [8] Array to string conversion /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 77 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 77 行.
+NOTIC: [8] Array to string conversion /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 77 行.
+NOTIC: [8] Undefined index: goods /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 74 行.
+NOTIC: [8] Undefined variable: goods /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 108 行.
+NOTIC: [8] Undefined variable: buyCar /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 133 行.
+NOTIC: [8] Undefined variable: addr /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/ab078032fbe6917b4fd2a6e6963d0f64.php 第 158 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2015-10-07T16:02:41+08:00 ] 127.0.0.1 /index.php?m=Home&c=PersonalCenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 5 行.
+NOTIC: [8] Undefined variable: mataKeyWords /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 8 行.
+NOTIC: [8] Undefined variable: mataKeyDis /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 9 行.
+NOTIC: [8] Undefined variable: goods /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 193 行.
+NOTIC: [8] Undefined variable: buyCar /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 218 行.
+NOTIC: [8] Undefined variable: addr /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2015-10-07T16:02:54+08:00 ] 127.0.0.1 /index.php?m=Home&c=PersonalCenter&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: title /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 5 行.
+NOTIC: [8] Undefined variable: mataKeyWords /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 8 行.
+NOTIC: [8] Undefined variable: mataKeyDis /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 9 行.
+NOTIC: [8] Undefined variable: goods /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 193 行.
+NOTIC: [8] Undefined variable: buyCar /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 218 行.
+NOTIC: [8] Undefined variable: addr /Users/badasslittlepig/www/wechatTeam/App/Runtime/Cache/Home/893556a74b373b9b0657a34d8da8b46d.php 第 243 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+

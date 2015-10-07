@@ -13,7 +13,7 @@ class TemplateController extends BaseController {
      */
     public function Index(){
         $themeId = M('User')->where(array('user'=>$_SESSION['user']))->getfield('theme');
-        $this->assign('theme',$themeId);
+        $this->assign('themeId',$themeId);
         $this->display();
     }
     

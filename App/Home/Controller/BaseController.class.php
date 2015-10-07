@@ -22,6 +22,10 @@ class BaseController extends Controller {
             $this->error('您输入的URL地址有误，请核对后再输入！');
             exit;
         }
+        $shareOpenid = I('get.open');
+        if($shareOpenid){
+            $this->addDistribution($shareOpenid);
+        }
     }
     
     /**
@@ -41,7 +45,7 @@ class BaseController extends Controller {
         $openid = 'ok_Tas7S8rDGbcYce8u97I6g7HK8';
         $_SESSION['openid'] = $openid;
         $wechatInfo = M('wechatUser')
-                ->field('nickname, headimgurl')
+                ->field('nickname, headimgurl, subscribe')
                 ->where(array('open_id'=>$openid))
                 ->find();
         $_SESSION['user'] = $wechatInfo;
@@ -58,4 +62,17 @@ class BaseController extends Controller {
             ->find();
         $_SESSION['shopInfo'] = $companyInfo;
     } 
+    
+    /**
+     * 绑定分销
+     */
+    public function addDistribution($openid){
+        $wechatId = M('WechatUser')->where(array('open_id'=>$openid))->getfield('id');
+        if($wechatId){
+           $commissionOpenId =  M('WechatUser')->where(array('open_id'=>$_SESSION['openid']))->getfield('commission_open_id');
+           if($commissionOpenId == ''){
+                M('WechatUser')->where(array('open_id'=>$_SESSION['openid']))->save(array('commission_open_id'=>$openid));
+           }
+        }
+    }
 }
